@@ -1,6 +1,6 @@
 {
-    "name": "YouTube Mobile 2015",
-    "short_name": "2015YouTube",
+    "name": "YouTube Mobile 2021",
+    "short_name": "YouTube",
     "icons": [
         {
             "src": "/android-chrome-192.png",
@@ -16,6 +16,6 @@
     "theme_color": "#BA1B12",
     "background_color": "#f1f1f1",
     "display": "standalone",
-    "description": "The 2015 YouTube experience, brought back to your smart device!",
+    "description": "The 2021 YouTube experience, brought back to your smart device!",
     "start_url": "/app"
 }
