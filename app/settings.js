@@ -168,7 +168,7 @@ function settingsPage() {
     pageCont.appendChild(page);
     page.appendChild(ytm15settings);
 
-    title.textContent = Settings_text_string + ' - 2015YouTube';
+    title.textContent = Settings_text_string + ' - 2021YouTube';
 
     function settingsEventListenFunc(){
     const settingsOpts = settingsOptCont.querySelectorAll(".settings-category");
@@ -185,7 +185,7 @@ function settingsPage() {
     settingsPageHeader.id = "settings";
     headerTitle.setAttribute("aria-label", Settings_text_string);
     headerTitle.textContent = Settings_text_string;
-    title.textContent = Settings_text_string + ' - 2015YouTube';
+    title.textContent = Settings_text_string + ' - 2021YouTube';
     if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] !== undefined && window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] !== "") {
       ytm15settings.classList.add("page-visible");
       if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] == "general") {
@@ -201,7 +201,7 @@ function settingsPage() {
       settingsPageHeader.id = "general";
       headerTitle.setAttribute("aria-label", General_text_string);
       headerTitle.textContent = General_text_string;
-      title.textContent = General_text_string + ' - 2015YouTube';
+      title.textContent = General_text_string + ' - 2021YouTube';
 
       if (WEB_ENABLE_DARK_THEME_OPTION_expflag == "true") {
       settingBooleanDark = {
@@ -252,7 +252,7 @@ function settingsPage() {
       settingsPageHeader.innerHTML = ExpFlags_text_string;
       headerTitle.setAttribute("aria-label", ExpFlags_text_string);
       headerTitle.textContent = ExpFlags_text_string;
-      title.textContent = ExpFlags_text_string + ' - 2015YouTube';
+      title.textContent = ExpFlags_text_string + ' - 2021YouTube';
       
       settingBlocks = [
       {
@@ -277,7 +277,7 @@ function settingsPage() {
         {
           "title": "Material",
           "selected": DEFAULT_POPUP_MENU_STYLE_expflag == "Material",
-          "selected-default": true
+          "selected-default": false
         },
         {
           "title": "Material_2",
@@ -287,7 +287,7 @@ function settingsPage() {
         {
           "title": "YouTube",
           "selected": DEFAULT_POPUP_MENU_STYLE_expflag == "YouTube",
-          "selected-default": false
+          "selected-default": true
         }
         ],
         "lsitem": "DEFAULT_POPUP_MENU_STYLE"
@@ -300,7 +300,7 @@ function settingsPage() {
         {
           "title": "Holo",
           "selected": DEFAULT_MEDIA_POPUP_MENU_STYLE_expflag == "Holo",
-          "selected-default": true
+          "selected-default": false
         },
         {
           "title": "Material",
@@ -315,7 +315,7 @@ function settingsPage() {
         {
           "title": "YouTube",
           "selected": DEFAULT_MEDIA_POPUP_MENU_STYLE_expflag == "YouTube",
-          "selected-default": false
+          "selected-default": true
         }
         ],
         "lsitem": "DEFAULT_MEDIA_POPUP_MENU_STYLE"
@@ -325,7 +325,7 @@ function settingsPage() {
         "title": "WEB_ENABLE_DARK_THEME_OPTION",
         "subtitle": "",
         "pressed": WEB_ENABLE_DARK_THEME_OPTION_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "WEB_ENABLE_DARK_THEME_OPTION"
       },
@@ -334,7 +334,7 @@ function settingsPage() {
         "title": "WEB_CHANNELS_HEADER_NO_LEFT_MARGIN",
         "subtitle": "",
         "pressed": WEB_CHANNELS_HEADER_NO_LEFT_MARGIN_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "WEB_CHANNELS_HEADER_NO_LEFT_MARGIN"
       },
@@ -352,7 +352,7 @@ function settingsPage() {
         "title": "CHANNELS_SEPARATE_VIDS_SHORTS_LIVE_TABS",
         "subtitle": "",
         "pressed": CHANNELS_SEPARATE_VIDS_SHORTS_LIVE_TABS_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "CHANNELS_SEPARATE_VIDS_SHORTS_LIVE_TABS"
       },
@@ -361,7 +361,7 @@ function settingsPage() {
         "title": "WEB_ENABLE_PIVOT_BAR",
         "subtitle": "",
         "pressed": WEB_ENABLE_PIVOT_BAR_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "WEB_ENABLE_PIVOT_BAR"
       },
@@ -370,7 +370,7 @@ function settingsPage() {
         "title": "COMPACT_ITEM_LARGER_THUMBNAILS",
         "subtitle": "",
         "pressed": COMPACT_ITEM_LARGER_THUMBNAILS_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "COMPACT_ITEM_LARGER_THUMBNAILS"
       },
@@ -379,7 +379,7 @@ function settingsPage() {
         "title": "PIVOT_DISABLE_SHADOW",
         "subtitle": "",
         "pressed": PIVOT_DISABLE_SHADOW_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "PIVOT_DISABLE_SHADOW"
       },
@@ -388,7 +388,7 @@ function settingsPage() {
         "title": "TIMESTATUS_NEW_STYLE",
         "subtitle": "",
         "pressed": TIMESTATUS_NEW_STYLE_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "TIMESTATUS_NEW_STYLE"
       },
@@ -397,7 +397,7 @@ function settingsPage() {
         "title": "LIGHTER_BORDER_COLORS",
         "subtitle": "",
         "pressed": LIGHTER_BORDER_COLORS_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "LIGHTER_BORDER_COLORS"
       },
@@ -406,7 +406,7 @@ function settingsPage() {
         "title": "HEADER_SHORTER_SIZE",
         "subtitle": "",
         "pressed": HEADER_SHORTER_SIZE_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "HEADER_SHORTER_SIZE"
       },
@@ -415,7 +415,7 @@ function settingsPage() {
         "title": "HEADER_WHITE_BTN_COLORS",
         "subtitle": "",
         "pressed": HEADER_WHITE_BTN_COLORS_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "HEADER_WHITE_BTN_COLORS"
       },
@@ -424,7 +424,7 @@ function settingsPage() {
         "title": "HEADER_RED_STYLE",
         "subtitle": "",
         "pressed": HEADER_RED_STYLE_expflag == "true",
-        "pressed-default": true,
+        "pressed-default": false,
         "disabled": false,
         "lsitem": "HEADER_RED_STYLE"
       },
@@ -470,25 +470,25 @@ function settingsPage() {
         "title": "SUBSCRIBE_BTN_UPPERCASE",
         "subtitle": "",
         "pressed": SUBSCRIBE_BTN_UPPERCASE_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "SUBSCRIBE_BTN_UPPERCASE"
       },
       {
         "type": "boolean",
-        "title": "WATCH_USE_MTRL_ICONS",
+        "title": "WATCH_USE_OUTLINE_ICONS",
         "subtitle": "",
-        "pressed": WATCH_USE_MTRL_ICONS_expflag == "true",
-        "pressed-default": false,
+        "pressed": WATCH_USE_OUTLINE_ICONS_expflag == "true",
+        "pressed-default": true,
         "disabled": false,
-        "lsitem": "WATCH_USE_MTRL_ICONS"
+        "lsitem": "WATCH_USE_OUTLINE_ICONS"
       },
       {
         "type": "boolean",
         "title": "BTN_FONT_WEIGHT_500",
         "subtitle": "",
         "pressed": BTN_FONT_WEIGHT_500_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "BTN_FONT_WEIGHT_500"
       },
@@ -500,12 +500,12 @@ function settingsPage() {
         {
           "title": "2015",
           "selected": WATCH_AUTONAV_BAR_STYLE_expflag == "2015",
-          "selected-default": true
+          "selected-default": false
         },
         {
           "title": "2016",
           "selected": WATCH_AUTONAV_BAR_STYLE_expflag == "2016",
-          "selected-default": false
+          "selected-default": true
         }
         ],
         "lsitem": "WATCH_AUTONAV_BAR_STYLE"
@@ -515,7 +515,7 @@ function settingsPage() {
         "title": "WATCH_AUTONAV_TITLE_USE_UPNEXT",
         "subtitle": "",
         "pressed": WATCH_AUTONAV_TITLE_USE_UPNEXT_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "WATCH_AUTONAV_TITLE_USE_UPNEXT"
       },
@@ -542,7 +542,7 @@ function settingsPage() {
         "title": "WATCH_ENABLE_NEW_UI",
         "subtitle": "",
         "pressed": WATCH_ENABLE_NEW_UI_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "WATCH_ENABLE_NEW_UI"
       },
@@ -551,7 +551,7 @@ function settingsPage() {
         "title": "WATCH_TILTE_FONT_WEIGHT_500",
         "subtitle": "",
         "pressed": WATCH_TILTE_FONT_WEIGHT_500_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "WATCH_TILTE_FONT_WEIGHT_500"
       },
@@ -560,7 +560,7 @@ function settingsPage() {
         "title": "USE_NEW_SUBSCRIBE_ICON",
         "subtitle": "",
         "pressed": USE_NEW_SUBSCRIBE_ICON_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "USE_NEW_SUBSCRIBE_ICON"
       },
@@ -601,7 +601,7 @@ function settingsPage() {
         "title": "PIVOT_HIDE_NOTIFICATIONS",
         "subtitle": "",
         "pressed": PIVOT_HIDE_NOTIFICATIONS_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "PIVOT_HIDE_NOTIFICATIONS"
       },
@@ -628,7 +628,7 @@ function settingsPage() {
         "title": "APP_NEW_ERROR_SCREEN",
         "subtitle": "",
         "pressed": APP_NEW_ERROR_SCREEN_expflag == "true",
-        "pressed-default": false,
+        "pressed-default": true,
         "disabled": false,
         "lsitem": "APP_NEW_ERROR_SCREEN"
       },
@@ -697,12 +697,12 @@ function settingsPage() {
       },
       {
         "type": "boolean",
-        "title": "HEADER_CAST_BUTTON_AS_URL_BOX",
+        "title": "HEADER_NOTIFICATION_BUTTON_AS_URL_BOX",
         "subtitle": "Copy a youtube link and press cast to open it in YTm15",
-        "pressed": HEADER_CAST_BUTTON_AS_URL_BOX_expflag == "true",
-        "pressed-default": false,
+        "pressed": HEADER_NOTIFICATION_BUTTON_AS_URL_BOX_expflag == "true",
+        "pressed-default": true,
         "disabled": false,
-        "lsitem": "HEADER_CAST_BUTTON_AS_URL_BOX"
+        "lsitem": "HEADER_NOTIFICATION_BUTTON_AS_URL_BOX"
       },
       {
         "type": "boolean",

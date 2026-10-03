@@ -396,7 +396,7 @@ function renderHeader() {
     header.appendChild(headerCont);
     headerCont.appendChild(headerTitle);
     headerCont.appendChild(headerButtons);
-    if (HEADER_CAST_BUTTON_AS_URL_BOX_expflag == "true") {headerButtons.appendChild(castBtn);};
+    if (HEADER_NOTIFICATIONS_BUTTON_AS_URL_BOX_expflag == "true") {headerButtons.appendChild(castBtn);};
     headerButtons.appendChild(searchBtn);
     headerButtons.appendChild(menuBtn);
 

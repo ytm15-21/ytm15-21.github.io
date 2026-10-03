@@ -891,7 +891,7 @@ function channelPage() {
         compMediaItemAuthor = item.channelCount;
         compMediaItemvidId = item.url;
         } else {
-        compMediaItemThumb = item.thumbnail[2].url;
+        compMediaItemThumb = item.thumbnail[item.thumbnail.length - 1].url;
         compMediaItemLength = item.lengthText;
         compMediaItemTitle = item.title;
         compMediaItemAuthor = item.channelTitle;
