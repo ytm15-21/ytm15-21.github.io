@@ -90,7 +90,7 @@ Stuff YTm21 makes use of
 -Return YouTube Dislike API (<a href="https://returnyoutubedislikeapi.com/swagger/">https://returnyoutubedislikeapi.com/swagger/</a>)
 
 Player:
--Custom-built player made just for YTm15 (uses the Invidious API) (You can use YT's embed player as a fallback by going to "player 3-square menu" > "YT iframe player", in case the YTm15 player doesn't play)
+-Custom-built player made just for YTm21 (uses the Invidious API) (You can use YT's embed player as a fallback by going to "player 3-square menu" > "YT iframe player", in case the YTm21 player doesn't play)
 (Formely used YouTube's embed player, and Invidious' embed player before that)
 <!-- Polyfills:
 -Polyfill.io (<a href="https://polyfill.io/">https://polyfill.io/</a>) (this line of text was removed on 31 Aug 2024 due to polyfill.io being shut down for some reason) -->
@@ -121,7 +121,7 @@ Changelog
     <div class="ap-footer-content">
     <h3 class="ap-footer-text">Have any questions/issues/requests/bugs/feedback? <a href="https://github.com/ytm15-21/ytm15-21.github.io/issues">Visit our Github's issues page</a></h3>
     <h4 class="ap-footer-text small subhead" id="ap-footer-links">Links: <a href="https://ytm15-21.github.io/">Landing page</a> | <a href="https://github.com/ytm15-21/ytm15-21.github.io/">Github page</a></h4>
-    <h4 class="ap-footer-text small subhead" id="ap-footer-copyright-and-copyleft-text">© 2015, YouTube and Google | (ↄ) 2024, Yacine's remakes</h4>
+    <h4 class="ap-footer-text small subhead" id="ap-footer-copyright-and-copyleft-text">© 2021, YouTube and Google | (ↄ) 2024, Yacine's remakes</h4>
     <h4 class="ap-footer-text small subhead">Please note that YTm21 is not associated with, affiliated with, developed, approved, or endorsed by YouTube or Google!</h4>
     </div>
     </footer>

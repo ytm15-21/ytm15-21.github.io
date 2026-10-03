@@ -2538,7 +2538,7 @@ if (window.location.hash.split("/").join(',').split("?").join(',').split(',').sl
     }
 if (!wasPrevChannelPage) {
     pageCont.innerHTML = "";
-    title.textContent = "2015YouTube";
+    title.textContent = "YouTube";
     headerTitle.setAttribute("aria-label", _2015YT_text_string);
     headerTitle.textContent = _2015YT_text_string;
 }
