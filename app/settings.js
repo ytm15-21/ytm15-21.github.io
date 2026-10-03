@@ -257,7 +257,7 @@ function settingsPage() {
       settingBlocks = [
       {
         "type": "boolean",
-        "title": "DISABLE_YTM15_APP_BORDER",
+        "title": "DISABLE_YTM21_APP_BORDER",
         "subtitle": "",
         "pressed": DISABLE_YTM15_APP_BORDER_expflag == "true",
         "pressed-default": false,
@@ -698,7 +698,7 @@ function settingsPage() {
       {
         "type": "boolean",
         "title": "HEADER_NOTIFICATIONS_BUTTON_AS_URL_BOX",
-        "subtitle": "Copy a youtube link and press cast to open it in YTm15",
+        "subtitle": "Copy a youtube link and press notifications to open it in YTm21",
         "pressed": HEADER_CAST_BUTTON_AS_URL_BOX_expflag == "true",
         "pressed-default": true,
         "disabled": false,
