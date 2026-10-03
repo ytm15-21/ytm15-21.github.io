@@ -168,7 +168,7 @@ function settingsPage() {
     pageCont.appendChild(page);
     page.appendChild(ytm15settings);
 
-    title.textContent = Settings_text_string + ' - 2021YouTube';
+    title.textContent = Settings_text_string + ' - YouTube';
 
     function settingsEventListenFunc(){
     const settingsOpts = settingsOptCont.querySelectorAll(".settings-category");
@@ -185,7 +185,7 @@ function settingsPage() {
     settingsPageHeader.id = "settings";
     headerTitle.setAttribute("aria-label", Settings_text_string);
     headerTitle.textContent = Settings_text_string;
-    title.textContent = Settings_text_string + ' - 2021YouTube';
+    title.textContent = Settings_text_string + ' - YouTube';
     if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] !== undefined && window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] !== "") {
       ytm15settings.classList.add("page-visible");
       if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(1, 2)[0] == "general") {
@@ -201,7 +201,7 @@ function settingsPage() {
       settingsPageHeader.id = "general";
       headerTitle.setAttribute("aria-label", General_text_string);
       headerTitle.textContent = General_text_string;
-      title.textContent = General_text_string + ' - 2021YouTube';
+      title.textContent = General_text_string + ' - YouTube';
 
       if (WEB_ENABLE_DARK_THEME_OPTION_expflag == "true") {
       settingBooleanDark = {
@@ -252,7 +252,7 @@ function settingsPage() {
       settingsPageHeader.innerHTML = ExpFlags_text_string;
       headerTitle.setAttribute("aria-label", ExpFlags_text_string);
       headerTitle.textContent = ExpFlags_text_string;
-      title.textContent = ExpFlags_text_string + ' - 2021YouTube';
+      title.textContent = ExpFlags_text_string + ' - YouTube';
       
       settingBlocks = [
       {
@@ -478,10 +478,10 @@ function settingsPage() {
         "type": "boolean",
         "title": "WATCH_USE_OUTLINE_ICONS",
         "subtitle": "",
-        "pressed": WATCH_USE_OUTLINE_ICONS_expflag == "true",
+        "pressed": WATCH_USE_MTRL_ICONS_expflag == "true",
         "pressed-default": true,
         "disabled": false,
-        "lsitem": "WATCH_USE_OUTLINE_ICONS"
+        "lsitem": "WATCH_USE_MTRL_ICONS"
       },
       {
         "type": "boolean",
@@ -697,12 +697,12 @@ function settingsPage() {
       },
       {
         "type": "boolean",
-        "title": "HEADER_NOTIFICATION_BUTTON_AS_URL_BOX",
+        "title": "HEADER_NOTIFICATIONS_BUTTON_AS_URL_BOX",
         "subtitle": "Copy a youtube link and press cast to open it in YTm15",
-        "pressed": HEADER_NOTIFICATION_BUTTON_AS_URL_BOX_expflag == "true",
+        "pressed": HEADER_CAST_BUTTON_AS_URL_BOX_expflag == "true",
         "pressed-default": true,
         "disabled": false,
-        "lsitem": "HEADER_NOTIFICATION_BUTTON_AS_URL_BOX"
+        "lsitem": "HEADER_CAST_BUTTON_AS_URL_BOX"
       },
       {
         "type": "boolean",

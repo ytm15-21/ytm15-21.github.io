@@ -59,13 +59,13 @@ What is YTm21/YouTube Mobile 2021?
     </div>
 
     <div class="ap-shelf-content">
-    <div class="ap-shelf-text">YouTube Mobile 2021 (also known as YTm21) is a project of Yacine (YTm15) to rebuild the 2015 version of the interface of YouTube for mobile, modified by me to look like the 2021 one. The original creator of YTm21 (YTm15) is Yacine Ghuloum and the creator of YTm21 is Agus Play.
+    <div class="ap-shelf-text">YouTube Mobile 2021 (also known as YTm21) is a project of Yacine (YTm15) to rebuild the 2015 version of the interface of YouTube for mobile, modified by me to look like the 2021 one. The creator of YTm15 is Yacine Ghuloum and the creator of YTm21 is Agus Play.
 
 The original project (YTm15) has been ongoing since Feb 2024, in an effort to ensure that you can relive a nostalgic experience of what it was like to use the YouTube mobile app back in 2015, and YTm21 since Oct 2026. (Or just for people who want to use YT with an older look<!-- ig -->)
 
 YTm21 is based off of version 16 of the Android YT app
 <!-- The line below was previously: "Please note that YTm15 as it is in its current state is unfinished, so a lot of things you'd expect to see in something like this (e.g. channel pages, search page, playlist page, and even watchpage) are not present/built/finished in this app yet" -->
-Please note YTm15 as it is right now is currently in an unfinished state, so it's expected to find bugs and missing/unfinished features/pages/stuff here and there
+Please note YTm21 as it is right now is currently in an unfinished state, so it's expected to find bugs and missing/unfinished features/pages/stuff here and there
 </div>
     </div>
     </div>
@@ -115,7 +115,7 @@ Changelog
     <!-- <div class="item-section"> -->
     <!-- <div class="lazy-list no-animation"> -->
     <div class="about-page-bottom-title">
-    <h3 class="ap-bottom-title-text">YTm15, a project to bring back YT's old mobile UI</h3>
+    <h3 class="ap-bottom-title-text">YTm21, a project to bring back YT's old mobile UI</h3>
     </div>
     <footer class="about-page-footer">
     <div class="ap-footer-content">
@@ -138,7 +138,7 @@ Changelog
     aboutPage.appendChild(section);
 
     var title = document.querySelector("title");
-    title.textContent = 'About - 2015YouTube';
+    title.textContent = 'About - YouTube';
 
     if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(2, 3)[0] == "changelog") {
       sectLazyList.innerHTML = `<div class="ap-shelf">
@@ -553,7 +553,7 @@ a few hours later:
     </div>
 `;
       title.textContent = 'Changelog - YouTube';
-      headerTitle.setAttribute("aria-label", "YTm15 Changelog");
+      headerTitle.setAttribute("aria-label", "YTm21 Changelog");
       headerTitle.textContent = "YTm21 Changelog";
     }
 

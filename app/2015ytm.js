@@ -127,7 +127,7 @@ localStorage.setItem("DARK_THEME_HASH_COLOR", "#30");
 DARK_THEME_HASH_COLOR_expflag = localStorage.getItem("DARK_THEME_HASH_COLOR");
 }
 SUBSCRIBE_BTN_UPPERCASE_expflag = localStorage.getItem("SUBSCRIBE_BTN_UPPERCASE");
-WATCH_USE_OUTLINE_ICONS_expflag = localStorage.getItem("WATCH_USE_OUTLINE_ICONS");
+WATCH_USE_MTRL_ICONS_expflag = localStorage.getItem("WATCH_USE_MTRL_ICONS");
 BTN_FONT_WEIGHT_500_expflag = localStorage.getItem("BTN_FONT_WEIGHT_500");
 WATCH_AUTONAV_BAR_STYLE_expflag = localStorage.getItem("WATCH_AUTONAV_BAR_STYLE");
 if (WATCH_AUTONAV_BAR_STYLE_expflag == undefined) {
@@ -161,7 +161,7 @@ WEB_IOS_SPINNER_expflag = localStorage.getItem("WEB_IOS_SPINNER");
 HEADER_NO_SHADOW_expflag = localStorage.getItem("HEADER_NO_SHADOW");
 DARK_THEME_SEPERATE_BACKGROUND_COLOR_expflag = localStorage.getItem("DARK_THEME_SEPERATE_BACKGROUND_COLOR");
 APP_UNDERLINE_BUTTONS_expflag = localStorage.getItem("APP_UNDERLINE_BUTTONS");
-HEADER_NOTIFICATIONS_BUTTON_AS_URL_BOX_expflag = localStorage.getItem("HEADER_NOTIFICATIONS_BUTTON_AS_URL_BOX");
+HEADER_CAST_BUTTON_AS_URL_BOX_expflag = localStorage.getItem("HEADER_CAST_BUTTON_AS_URL_BOX");
 HEADER_CAST_ALTERNATE_ICON_expflag = localStorage.getItem("HEADER_CAST_ALTERNATE_ICON");
 APP_STOP_TEXT_SELECTION_expflag = localStorage.getItem("APP_STOP_TEXT_SELECTION");
 if (APP_STOP_TEXT_SELECTION_expflag == undefined) {
@@ -400,9 +400,9 @@ Suggestions_text_string = "Suggestions";
 Settings_text_string = "Settings";
 General_text_string = "General";
 SettingsMSG_text_string = "There is no page open at the current moment";
-ExpFlags_text_string = "YTm15 Experimental Flags";
+ExpFlags_text_string = "YTm21 Experimental Flags";
 SettingsMSG2_text_string = "To be added in the near future";
-AboutYTm15_text_string = "About YTm15";
+AboutYTm15_text_string = "About YTm21";
 DarkTheme_text_string = "Dark theme";
 DarkThemeDesc_text_string = "Enable dark theme throughout the app";
 About_text_string = "About";
