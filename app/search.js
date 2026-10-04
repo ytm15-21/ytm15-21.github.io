@@ -97,7 +97,7 @@ function searchPage() {
     page.appendChild(tabContainer);
 
     var title = document.querySelector("title");
-    title.textContent = searchValue + ' - 2015YouTube';
+    title.textContent = searchValue + ' - YouTube';
 
     if (!response.error) {response.data.forEach(function(item) {
         if (item.type == "channel") {

@@ -891,7 +891,7 @@ function channelPage() {
         compMediaItemAuthor = item.channelCount;
         compMediaItemvidId = item.url;
         } else {
-        compMediaItemThumb = item.thumbnail[2].url;
+        compMediaItemThumb = item.thumbnail[item.thumbnail.length - 1].url;
         compMediaItemLength = item.lengthText;
         compMediaItemTitle = item.title;
         compMediaItemAuthor = item.channelTitle;
@@ -2037,7 +2037,7 @@ function channelVideosContin(continuation, contItemParent) {
     page.appendChild(tabContainer);
 
     var title = document.querySelector("title");
-    title.textContent = response.meta.title  + ' - 2015YouTube';
+    title.textContent = response.meta.title  + ' - YouTube';
 
     if (!document.querySelector(".tab-bar")) {
         headerBar.appendChild(tabBar);

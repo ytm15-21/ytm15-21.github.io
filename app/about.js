@@ -19,8 +19,8 @@ function aboutYTm15() {
     var spinner = document.querySelector(".spinner-container.full-height");
     spinner.setAttribute("hidden", "");
 
-    headerTitle.setAttribute("aria-label", "About 2015YouTube");
-    headerTitle.textContent = "About 2015YouTube";
+    headerTitle.setAttribute("aria-label", "About 2021YouTube");
+    headerTitle.textContent = "About 2021YouTube";
 
     const page = document.createElement("page");
     page.classList.add('aboutYTm15');
@@ -43,10 +43,10 @@ function aboutYTm15() {
     <div class="item-section">
     <div class="lazy-list no-animation">
     <div class="about-page-heading">
-YouTube Mobile 2015/YTm15<img class="ytm15-logo ytm15-img" src="YouTube Mobile 2015 Logo (with shadow).png"></img>
+YouTube Mobile 2021/YTm21<img class="ytm15-logo ytm15-img" src="YouTube Mobile 2021 Logo.png"></img>
     </div>
     <div class="about-page-subheading">
-The 2015 YouTube experience, brought back to your smart device
+The 2021 YouTube experience, brought back to your smart device
     </div>
     </div>
     </div>
@@ -54,18 +54,18 @@ The 2015 YouTube experience, brought back to your smart device
     <div class="ap-shelf">
     <div class="ap-shelf-header">
     <h3>
-What is YTm15/YouTube Mobile 2015?
+What is YTm21/YouTube Mobile 2021?
     </h3>
     </div>
 
     <div class="ap-shelf-content">
-    <div class="ap-shelf-text">YouTube Mobile 2015 (also known as YTm15) is a project of mine to rebuild the 2015 version of the interface of YouTube for mobile. The creator of YTm15 is Yacine Ghuloum.
+    <div class="ap-shelf-text">YouTube Mobile 2021 (also known as YTm21) is a project of Yacine (YTm15) to rebuild the 2015 version of the interface of YouTube for mobile, modified by me to look like the 2021 one. The creator of YTm15 is Yacine Ghuloum and the creator of YTm21 is Agus Play.
 
-This project has been ongoing since Feb 2024, in an effort to ensure that you can relive a nostalgic experience of what it was like to use the YouTube mobile app back in 2015. (Or just for people who want to use YT with an older look<!-- ig -->)
+The original project (YTm15) has been ongoing since Feb 2024, in an effort to ensure that you can relive a nostalgic experience of what it was like to use the YouTube mobile app back in 2015, and YTm21 since Oct 2026. (Or just for people who want to use YT with an older look<!-- ig -->)
 
-YTm15 is based off of version 10 of the Android YT app
+YTm21 is based off of version 16 of the Android YT app
 <!-- The line below was previously: "Please note that YTm15 as it is in its current state is unfinished, so a lot of things you'd expect to see in something like this (e.g. channel pages, search page, playlist page, and even watchpage) are not present/built/finished in this app yet" -->
-Please note YTm15 as it is right now is currently in an unfinished state, so it's expected to find bugs and missing/unfinished features/pages/stuff here and there
+Please note YTm21 as it is right now is currently in an unfinished state, so it's expected to find bugs and missing/unfinished features/pages/stuff here and there
 </div>
     </div>
     </div>
@@ -73,7 +73,7 @@ Please note YTm15 as it is right now is currently in an unfinished state, so it'
     <div class="ap-shelf">
     <div class="ap-shelf-header">
     <h3>
-Stuff YTm15 makes use of
+Stuff YTm21 makes use of
     </h3>
     </div>
 
@@ -90,7 +90,7 @@ Stuff YTm15 makes use of
 -Return YouTube Dislike API (<a href="https://returnyoutubedislikeapi.com/swagger/">https://returnyoutubedislikeapi.com/swagger/</a>)
 
 Player:
--Custom-built player made just for YTm15 (uses the Invidious API) (You can use YT's embed player as a fallback by going to "player 3-square menu" > "YT iframe player", in case the YTm15 player doesn't play)
+-Custom-built player made just for YTm21 (uses the Invidious API) (You can use YT's embed player as a fallback by going to "player 3-square menu" > "YT iframe player", in case the YTm21 player doesn't play)
 (Formely used YouTube's embed player, and Invidious' embed player before that)
 <!-- Polyfills:
 -Polyfill.io (<a href="https://polyfill.io/">https://polyfill.io/</a>) (this line of text was removed on 31 Aug 2024 due to polyfill.io being shut down for some reason) -->
@@ -115,14 +115,14 @@ Changelog
     <!-- <div class="item-section"> -->
     <!-- <div class="lazy-list no-animation"> -->
     <div class="about-page-bottom-title">
-    <h3 class="ap-bottom-title-text">YTm15, a project to bring back YT's old mobile UI</h3>
+    <h3 class="ap-bottom-title-text">YTm21, a project to bring back YT's old mobile UI</h3>
     </div>
     <footer class="about-page-footer">
     <div class="ap-footer-content">
-    <h3 class="ap-footer-text">Have any questions/issues/requests/bugs/feedback? <a href="https://github.com/ytm15/ytm15.github.io/issues">Visit our Github's issues page</a></h3>
-    <h4 class="ap-footer-text small subhead" id="ap-footer-links">Links: <a href="https://ytm15.github.io/">Landing page</a> | <a href="https://github.com/ytm15/ytm15.github.io/">Github page</a></h4>
-    <h4 class="ap-footer-text small subhead" id="ap-footer-copyright-and-copyleft-text">© 2015, YouTube and Google | (ↄ) 2024, Yacine's remakes</h4>
-    <h4 class="ap-footer-text small subhead">Please note that YTm15 is not associated with, affiliated with, developed, approved, or endorsed by YouTube or Google!</h4>
+    <h3 class="ap-footer-text">Have any questions/issues/requests/bugs/feedback? <a href="https://github.com/ytm15-21/ytm15-21.github.io/issues">Visit our Github's issues page</a></h3>
+    <h4 class="ap-footer-text small subhead" id="ap-footer-links">Links: <a href="https://ytm15-21.github.io/">Landing page</a> | <a href="https://github.com/ytm15-21/ytm15-21.github.io/">Github page</a></h4>
+    <h4 class="ap-footer-text small subhead" id="ap-footer-copyright-and-copyleft-text">© 2021, YouTube and Google | (ↄ) 2024, Yacine's remakes</h4>
+    <h4 class="ap-footer-text small subhead">Please note that YTm21 is not associated with, affiliated with, developed, approved, or endorsed by YouTube or Google!</h4>
     </div>
     </footer>
     <!-- </div> -->
@@ -138,7 +138,7 @@ Changelog
     aboutPage.appendChild(section);
 
     var title = document.querySelector("title");
-    title.textContent = 'About - 2015YouTube';
+    title.textContent = 'About - YouTube';
 
     if (window.location.hash.split("/").join(',').split("?").join(',').split(',').slice(2, 3)[0] == "changelog") {
       sectLazyList.innerHTML = `<div class="ap-shelf">
@@ -552,9 +552,9 @@ a few hours later:
     </div>
     </div>
 `;
-      title.textContent = 'Changelog - 2015YouTube';
-      headerTitle.setAttribute("aria-label", "YTm15 Changelog");
-      headerTitle.textContent = "YTm15 Changelog";
+      title.textContent = 'Changelog - YouTube';
+      headerTitle.setAttribute("aria-label", "YTm21 Changelog");
+      headerTitle.textContent = "YTm21 Changelog";
     }
 
     if (APP_DEMATERIALIZE_UI_expflag == "true") {
