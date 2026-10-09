@@ -68,7 +68,7 @@ function renderHeader() {
         backBtn.setAttribute("hidden", "");
     }
     });
-    backBtn.innerHTML = `<ytm15-icon class="back-arrow"><svg viewBox="0 0 24 24" fill=""><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path></svg></ytm15-icon>`;
+    backBtn.innerHTML = `<img class="ytm15-icon back-arrow" src="ic_back_outline.png">`;
 
     const searchOverlay = document.createElement("div");
     searchOverlay.classList.add("searching-overlay");
@@ -241,9 +241,11 @@ function renderHeader() {
     castBtn.onclick = function(){openUrl();};
     castBtn.setAttribute("aria-label", SearchYT_text_string);
     castBtn.setAttribute("aria-haspopup", "false");
-    let alternateIcon = `<path data-glyph="cast-connected" d="M448,384 M21,235 v-43 q52,0,96.5,-26 t70,-70 t25.5,-96 h43 q0,64,-31.5,118 t-85.5,85.5 t-118,31.5 M21,149 v-42 q29,0,53.5,-14.5 t39,-39 t14.5,-53.5 h43 q0,30,-11.5,57.5 t-32.5,48.5 t-48.5,32 t-57.5,11 M21,64 v-64 h64 q0,27,-18.5,45.5 t-45.5,18.5 Z"/>`
-    if (HEADER_CAST_ALTERNATE_ICON_expflag == "true") {alternateIcon = `<path data-glyph="cast-connected" fill="#919191" d="M448,384 M21,235 v-43 q52,0,96.5,-26 t70,-70 t25.5,-96 h43 q0,64,-31.5,118 t-85.5,85.5 t-118,31.5 M405,299 h-298 v-35 q63,-21,110.5,-68 t67.5,-111 h120 v214 M21,149 v-42 q29,0,53.5,-14.5 t39,-39 t14.5,-53.5 h43 q0,30,-11.5,57.5 t-32.5,48.5 t-48.5,32 t-57.5,11 M21,64 v-64 h64 q0,27,-18.5,45.5 t-45.5,18.5 Z"/>`}
-    castBtn.innerHTML = `<ytm15-icon class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 64.7273 512 448.462"><g transform="scale(1,-1) translate(0, -480.36365)"><path data-glyph="cast-connected" d="M448,384 h-384 q-18,0,-30.5,-12.5 t-12.5,-30.5 v-64 h43 v64 h384 v-298 h-149 v-43 h149 q18,0,30.5,12.5 t12.5,30.5 v298 q0,18,-12.5,30.5 t-30.5,12.5"/>` + alternateIcon + `</g></svg></ytm15-icon>`;
+    if (HEADER_CAST_ALTERNATE_ICON_expflag == "true") {
+	castBtn.innerHTML = `<img class="ytm15-icon search-icon" src="ic_notifications_outline.png">`
+    } else {
+	castBtn.innerHTML = `<img class="ytm15-icon search-icon" src="ic_cast_outline.png">`
+    }
     if (window.location.pathname.split("/").slice(3, 4) == "results.html") {
         castBtn.setAttribute("hidden", "");
     }
@@ -263,7 +265,7 @@ function renderHeader() {
     searchBtn.onclick = function(){searching(searchDropdown, input);};
     searchBtn.setAttribute("aria-label", SearchYT_text_string);
     searchBtn.setAttribute("aria-haspopup", "false");
-    searchBtn.innerHTML = `<ytm15-icon class="search-icon"><svg viewBox="0 0 24 24" fill=""><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></ytm15-icon>`;
+    searchBtn.innerHTML = `<img class="ytm15-icon search-icon" src="ic_menu_search_outline.png">`;
     if (window.location.pathname.split("/").slice(3, 4) == "results.html") {
     searchBtn.setAttribute("hidden", "");
     }
@@ -367,7 +369,7 @@ function renderHeader() {
     };
     menuBtn.setAttribute("aria-label", "Menu");
     menuBtn.setAttribute("aria-haspopup", "true");
-    menuBtn.innerHTML = `<ytm15-icon class="menu-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></ytm15-icon>`;
+    menuBtn.innerHTML = `<ytm15-icon class="menu-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z"></path></svg></ytm15-icon>`;
 
     if (APP_DEMATERIALIZE_UI_expflag == "true") {
     backBtn.innerHTML = `<img class="ytm15-img-icon ytm15-img back-icon" src="abc_ic_ab_back_holo_light.png"><img class="ytm15-img-icon ytm15-img youtube-logo-icon action-bar-logo" src="action_bar_logo_release.png">`;

@@ -128,7 +128,7 @@
     border: 0;
     font: inherit;
     line-height: 1;
-    color: rgb(255 255 255 / 85%);
+    color: rgb(255 255 255 / 100%);
     text-align: center;
     outline: 0;
     padding: 12px;
@@ -154,7 +154,6 @@
     flex: unset;
     margin-left: 12px;
     font-size: 13px;
-    -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.6) 0px 1px 2px);
 }
 .progress-container {
     flex: 10;
@@ -178,8 +177,7 @@
 }
 .progress-filled {
     width: 50%;
-    background: #c62118;
-    background: linear-gradient(180deg, #c62118, #b00);
+    background: #ff0000;
     flex: 0;
     flex-basis: 0%;
     position: relative;
@@ -188,8 +186,6 @@
     position: absolute;
     height: 30px;
     width: 30px;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
     right: -14px;
     top: -13px;
     border-radius: 50%;
@@ -197,18 +193,17 @@
 }
 .progress-track::before {
     content: "";
-    background-color: #eee;
+    background-color: #ff0000;
     padding: 5px;
-    display: block;
     margin: 10px;
+    display: block;
     border-radius: 50%;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .progress-track.scrubbing {
-    background: #eee;
+    background: #ff0000;
 }
 .progress-track.scrubbing::before {
-    background-color: #c62118;
+    background-color: #ff0000;
 }
 .player-img-icon {
     width: 24px;

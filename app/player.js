@@ -67,7 +67,7 @@ playerOptClose.classList.add("controls-button", "hide-options-button", "has-ripp
 playerOptClose.title = "Hide options";
 playerOptClose.ariaLabel = "Hide options";
 playerOptClose.innerHTML = `<img class="player-img-icon button-icon hide-icon inactive" src="ic_vidcontrol_hide_controls.png"></img>
-<img class="player-img-icon button-icon hide-icon active" src="ic_vidcontrol_hide_controls_pressed.png"></img>`;
+<img class="player-img-icon button-icon hide-icon active" src="ic_vidcontrol_hide_controls.png"></img>`;
 playerOptClose.ariaPressed = "false";
 playerOptContent.appendChild(playerOptClose);
 const poster = controlsCont.querySelector(".player-poster");
@@ -140,7 +140,7 @@ playerExitWatchBtn.classList.add("controls-button", "exit-watch-button", "has-ri
 playerExitWatchBtn.title = "Collapse watchpage";
 playerExitWatchBtn.ariaLabel = "Collapse watchpage";
 playerExitWatchBtn.innerHTML = `<img class="player-img-icon button-icon exit-watch-icon inactive" src="ic_vidcontrol_collapse.png"></img>
-<img class="player-img-icon button-icon exit-watch-icon active" src="ic_vidcontrol_collapse_pressed.png"></img>`;
+<img class="player-img-icon button-icon exit-watch-icon active" src="ic_vidcontrol_collapse.png"></img>`;
 playerExitWatchBtn.ariaPressed = "false";
 controlsTop.appendChild(playerExitWatchBtn);
 const playerTitle = document.createElement("h3");
@@ -189,8 +189,8 @@ const playerShareBtn = document.createElement("button");
 playerShareBtn.classList.add("controls-button", "share-button", "has-ripple");
 playerShareBtn.title = "Share video";
 playerShareBtn.ariaLabel = "Share video";
-playerShareBtn.innerHTML = `<img class="player-img-icon button-icon share-icon inactive" src="ic_vidcontrol_share.png"></img>
-<img class="player-img-icon button-icon share-icon active" src="ic_vidcontrol_share_pressed.png"></img>`;
+playerShareBtn.innerHTML = `<img class="player-img-icon button-icon share-icon inactive" src="ic_vidcontrol_cast.png"></img>
+<img class="player-img-icon button-icon share-icon active" src="ic_vidcontrol_cast.png"></img>`;
 playerShareBtn.ariaPressed = "false";
 controlsTop.appendChild(playerShareBtn);
 const overflowBtn = document.createElement("button");
@@ -198,7 +198,7 @@ overflowBtn.classList.add("controls-button", "overflow-button", "has-ripple");
 overflowBtn.title = "More options";
 overflowBtn.ariaLabel = "More options";
 overflowBtn.innerHTML = `<img class="player-img-icon button-icon menu-icon inactive" src="ic_vidcontrol_overflow.png"></img>
-<img class="player-img-icon button-icon menu-icon active" src="ic_vidcontrol_overflow_pressed.png"></img>`;
+<img class="player-img-icon button-icon menu-icon active" src="ic_vidcontrol_overflow.png"></img>`;
 overflowBtn.ariaPressed = "false";
 controlsTop.appendChild(overflowBtn);
 const duration = document.createElement("span");
@@ -211,7 +211,7 @@ fullScreenBtn.classList.add("controls-button", "toggle-button", "fullscreen-butt
 fullScreenBtn.title = "Toggle Fullscreen";
 fullScreenBtn.ariaLabel = "Open fullscreen";
 fullScreenBtn.innerHTML = `<img class="player-img-icon button-icon fullscreen-icon inactive" src="ic_vidcontrol_fullscreen_off.png"></img>
-<img class="player-img-icon button-icon fullscreen-icon active" src="ic_vidcontrol_fullscreen_off_pressed.png"></img>`;
+<img class="player-img-icon button-icon fullscreen-icon active" src="ic_vidcontrol_fullscreen_off.png"></img>`;
 fullScreenBtn.ariaPressed = "false";
 btnsCont.appendChild(fullScreenBtn);
 const playerDialogOverlay = document.createElement("div");
@@ -239,7 +239,7 @@ playerOptCloseDialog.classList.add("controls-button", "close-plyr-dialog-button"
 playerOptCloseDialog.title = "Close dialog";
 playerOptCloseDialog.ariaLabel = "Close dialog";
 playerOptCloseDialog.innerHTML = `<!-- <img class="player-img-icon button-icon hide-icon inactive" src="ic_vidcontrol_hide_controls.png"></img> -->
-<!-- <img class="player-img-icon button-icon hide-icon active" src="ic_vidcontrol_hide_controls_pressed.png"></img> -->
+<!-- <img class="player-img-icon button-icon hide-icon active" src="ic_vidcontrol_hide_controls.png"></img> -->
 Close`;
 playerOptCloseDialog.ariaPressed = "false";
 /* playerDialogHeader.appendChild(playerOptCloseDialog); */
@@ -252,7 +252,7 @@ playerOptMisc.classList.add("controls-button", "options-item-button", "misc-butt
 playerOptMisc.title = "Miscellaneous";
 playerOptMisc.ariaLabel = "Miscellaneous";
 playerOptMisc.innerHTML = `<img class="player-img-icon button-icon misc-icon inactive" src="player_icon_misc.png"></img>
-<img class="player-img-icon button-icon misc-icon active" src="player_icon_misc_pressed.png"></img>`;
+<img class="player-img-icon button-icon misc-icon active" src="player_icon_misc.png"></img>`;
 playerOptMisc.ariaPressed = "false";
 const playerOptMiscText = document.createElement("span");
 playerOptMiscText.textContent = "Misc";
@@ -277,7 +277,7 @@ playerOptQual.classList.add("controls-button", "options-item-button", "quality-b
 playerOptQual.title = "Quality";
 playerOptQual.ariaLabel = "Quality";
 playerOptQual.innerHTML = `<img class="player-img-icon button-icon quality-icon inactive" src="ic_vidcontrol_quality.png"></img>
-<img class="player-img-icon button-icon quality-icon active" src="ic_vidcontrol_quality_pressed.png"></img>`;
+<img class="player-img-icon button-icon quality-icon active" src="ic_vidcontrol_quality.png"></img>`;
 playerOptQual.ariaPressed = "false";
 const playerOptQualText = document.createElement("span");
 playerOptQualText.textContent = "Quality";
@@ -294,7 +294,7 @@ playerOptIFrame.classList.add("controls-button", "options-item-button", "iframe-
 playerOptIFrame.title = "YT iFrame Player";
 playerOptIFrame.ariaLabel = "YT iFrame Player";
 playerOptIFrame.innerHTML = `<img class="player-img-icon button-icon iframe-icon inactive" src="player_icon_iframe.png"></img>
-<img class="player-img-icon button-icon iframe-icon active" src="player_icon_iframe_pressed.png"></img>`;
+<img class="player-img-icon button-icon iframe-icon active" src="player_icon_iframe.png"></img>`;
 playerOptIFrame.ariaPressed = "false";
 const playerOptIFrameText = document.createElement("span");
 playerOptIFrameText.textContent = "YT iFrame Player";
@@ -397,13 +397,13 @@ function updateToggleButton() {
 function updateFSButton() {
   if (document.webkitFullscreenElement) {
     fullScreenBtn.innerHTML = `<img class="player-img-icon button-icon fullscreen-icon inactive" src="ic_vidcontrol_fullscreen_on.png"></img>
-<img class="player-img-icon button-icon fullscreen-icon active" src="ic_vidcontrol_fullscreen_on_pressed.png"></img>`;
+<img class="player-img-icon button-icon fullscreen-icon active" src="ic_vidcontrol_fullscreen_on.png"></img>`;
     fullScreenBtn.ariaPressed = "true";
     fullScreenBtn.ariaLabel = "Exit fullscreen";
     videoPlayer.classList.add("player-is-fullscreen");
   } else {
     fullScreenBtn.innerHTML = `<img class="player-img-icon button-icon fullscreen-icon inactive" src="ic_vidcontrol_fullscreen_off.png"></img>
-<img class="player-img-icon button-icon fullscreen-icon active" src="ic_vidcontrol_fullscreen_off_pressed.png"></img>`;
+<img class="player-img-icon button-icon fullscreen-icon active" src="ic_vidcontrol_fullscreen_off.png"></img>`;
     fullScreenBtn.ariaPressed = "false";
     fullScreenBtn.ariaLabel = "Open fullscreen";
     videoPlayer.classList.remove("player-is-fullscreen");

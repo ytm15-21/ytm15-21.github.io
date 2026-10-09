@@ -185,7 +185,7 @@ function renderWatchPage(parent) {
     "badges": [
       {
         "title": "Unlisted",
-        "iconPath": "M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z",
+        "iconPath": "ic_unlisted_outline.png",
         "iconName": "unlisted"
       }
     ] 
@@ -201,7 +201,7 @@ function renderWatchPage(parent) {
       const metaBadge = document.createElement("div");
       metaBadge.classList.add("metadata-badge-container");
       metaBadge.innerHTML = `<ytm15-badge class="metadata-badge soft-background typography-body-1b" data-type="BADGE_STYLE_TYPE_SIMPLE">
-<ytm15-icon class="${item.iconName}"><svg viewBox="0 0 24 24" fill=""><path d="${item.iconPath}"></path></svg></ytm15-icon> ${item.title}
+<img class="${item.iconName}" src="${item.iconPath}"> ${item.title}
 </ytm15-badge>`;
       badgeCont.appendChild(metaBadge);
     });
@@ -210,7 +210,7 @@ function renderWatchPage(parent) {
     viewCount.innerHTML = `<span class="secondary-text" role="text" aria-label="${Number(data.viewCount).toLocaleString() + " views"}">${Number(data.viewCount).toLocaleString() + " views"}</span>`;
     metaTitleCont.appendChild(viewCount);
 
-    metaHeaderCont.innerHTML = metaHeaderCont.innerHTML + `<ytm15-icon class="expand-icon" role="button" aria-label="Show more" aria-expanded="false"><svg viewBox="0 0 24 24" fill=""><path d="M7,10L12,15L17,10H7Z"></path></svg></ytm15-icon>`;
+    metaHeaderCont.innerHTML = metaHeaderCont.innerHTML + `<img class="ytm15-icon expand-icon" src="ic_expand_outline.png" role="button" aria-label="Show more" aria-expanded="false">`;
 
     const metadataDescBox = document.createElement("div");
     metadataDescBox.classList.add("video-metadata-description-box");
@@ -436,18 +436,18 @@ function renderWatchPage(parent) {
 
     if (WATCH_USE_MTRL_ICONS_expflag == "true") {
     mtrlBtnCont.innerHTML = `<button class="material-button" aria-label="${videoMetadataLikeCountAL}" aria-pressed="false">
-<ytm15-icon class="like-icon button-icon"><svg viewBox="0 0 24 24" fill=""><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path></svg></ytm15-icon><div class="button-text">${videoMetadataLikeCount}</div>
+<img class="ytm15-icon like-icon button-icon" src="ic_like_outline.png"><div class="button-text">${videoMetadataLikeCount}</div>
 </button>`
 
     mtrlBtnContDislike.innerHTML = `<button class="material-button" aria-label="${videoMetadataDislikeCountAL}" aria-pressed="false">
-<ytm15-icon class="dislike-icon button-icon"><svg viewBox="0 0 24 24" fill=""><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg></ytm15-icon><div class="button-text">${videoMetadataDislikeCount}</div>
+<img class="ytm15-icon dislike-icon button-icon" src="ic_dislike_outline.png"><div class="button-text">${videoMetadataDislikeCount}</div>
 </button>`
 
     mtrlBtnContShare.innerHTML = `<button class="material-button" aria-label="${Share_text_string}" aria-pressed="false">
-<ytm15-icon class="share-icon button-icon"><svg viewBox="0 0 24 24" fill=""><path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" style="
+<img class="ytm15-icon share-icon button-icon" src="ic_share_outline.png" style="
     transform: scale(1.3);
     transform-origin: center;
-"></path></svg></ytm15-icon><div class="button-text">${Share_text_string}</div>
+"><div class="button-text">${Share_text_string}</div>
 </button>`
 
     metadataActions.classList.add("use-mtrl-icons");

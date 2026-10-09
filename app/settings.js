@@ -557,7 +557,7 @@ function settingsPage() {
       },
       {
         "type": "boolean",
-        "title": "USE_NEW_SUBSCRIBE_ICON",
+        "title": "WATCH_HIDE_SUBSCRIBE_ICON",
         "subtitle": "",
         "pressed": USE_NEW_SUBSCRIBE_ICON_expflag == "true",
         "pressed-default": true,

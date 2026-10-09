@@ -185,7 +185,7 @@ opacity: 1;
 .media-channel {
     flex-shrink: 0;
 }
-div.media-icon {
+div.media-icon img {
     width: 40px;
     height: 40px;
     margin-right: 12px;
@@ -419,7 +419,7 @@ h3.media-headline {
     order: 1;
     margin-top: -38px;
 }
-div.media-icon {
+div.media-icon img {
     margin-right: 10px;
 }
 .media-extra-endpoint {
@@ -821,7 +821,6 @@ animation-duration: .28s;
     padding: 0;
     width: 100%;
     height: 45px;
-    color: #808080;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1780,11 +1779,11 @@ ytm15app.has-miniplayer {
 .player-controls-overlay .watch-action-button {
     color: rgba(255, 255, 255, 0.9);
 }
-.watch-action-button ytm15-icon {
+.watch-action-button ytm15-icon img {
     width: 28px;
     height: 28px;
 }
-.watch-action-button ytm15-icon svg {
+.watch-action-button ytm15-icon img {
     filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.5));
     -webkit-filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.5));
 }
@@ -2076,7 +2075,7 @@ ytm15-watch:empty::before {
 .watch-action-button .exit-watch-icon path {
     transform: scale(1.2) translate(-1px, -1px);
 }
-.watch-action-button ytm15-icon.exit-watch-icon {
+.watch-action-button ytm15-icon.exit-watch-icon img {
     margin: -2px;
 }
 
@@ -2287,12 +2286,11 @@ ytm15-badge:empty, .standalone-badge-supported ytm15-badge:empty {
 .top-standalone-badge ytm15-badge:last-child a:last-child {
     padding-right: 12px;
 }
-.video-metadata-header-content ytm15-icon {
-    color: rgba(0, 0, 0, 0.25);
+.video-metadata-header-content ytm15-icon img {
     margin-right: 3px;
     transition: transform .3s ease-out;
 }
-.video-metadata-header-content ytm15-icon.collapse-icon {
+.video-metadata-header-content ytm15-icon.collapse-icon img {
     transform: rotate(180deg);
 }
 .video-metadata-header-content ytm15-icon path {
@@ -2348,7 +2346,7 @@ ytm15-badge:empty, .standalone-badge-supported ytm15-badge:empty {
     width: 30px;
     height: 30px;
 }
-.video-metadata-actions ytm15-icon {
+.video-metadata-actions ytm15-icon img {
     width: 22px;
     height: 22px;
 }
@@ -2578,13 +2576,13 @@ ytm15-menu-button {
     margin: 0 -7px;
     flex-shrink: 0;
 }
-.media-item-menu .icon-button {
+.media-item-menu .icon-button img {
     padding: 1px;
     width: 22px;
     height: 22px;
     border-radius: 50px;
 }
-.media-item-menu ytm15-icon {
+.media-item-menu ytm15-icon img {
     width: 20px;
     height: 20px;
 }
@@ -3004,7 +3002,7 @@ ytm15-channels-header {
     flex-direction: column;
     justify-content: center;
 }
-.channels-header-icon {
+.channels-header-icon img {
     width: 60px;
     height: 60px;
     margin-top: -40px;
@@ -3037,7 +3035,7 @@ ytm15-channels-header {
     justify-content: flex-start;
     align-items: flex-end;
 }
-.channels-header-icon {
+.channels-header-icon img {
     width: 125px;
     height: 125px;
     margin-top: -90px;
@@ -3071,9 +3069,9 @@ ytm15-channels-header {
     width: 15px;
     height: 15px;
 }
-.ytm15-img-icon.subscribe-icon.style-2018 {
-    width: 18px;
-    height: 13px;
+
+.no-subscribe-icon .ytm15-img-icon.subscribe-icon {
+    display: none;
 }
 
 .continuation-item ~ .continuation-item {
@@ -3378,10 +3376,10 @@ ytm15-channel-sub-menu .dropdown-select:last-of-type {
 /* ytm15-channel-sub-menu {
     margin-bottom: -5px;
 } */
-.dropdown-select ytm15-icon {
+.dropdown-select ytm15-icon img {
     opacity: .5;
 }
-.dropdown-select ytm15-icon.dropdown-arrow-icon {
+.dropdown-select ytm15-icon.dropdown-arrow-icon img {
     padding: 6px 0;
     margin: -6px 0px;
 }
@@ -3539,7 +3537,7 @@ ytm15-playlist-header[data-is-beta="true"]::before {
     display: flex;
     padding: 7px 16px;
 }
-.comment-simplebox-icon {
+.comment-simplebox-icon img {
     width: 45px;
     height: 45px;
     margin-right: 16px;
@@ -3567,7 +3565,7 @@ ytm15-playlist-header[data-is-beta="true"]::before {
     padding-top: 15px;
     padding-bottom: 13px;
 }
-[data-viewing-replies="true"] .comment-simplebox-icon {
+[data-viewing-replies="true"] .comment-simplebox-icon img {
     width: 26px;
     height: 26px;
     margin-left: 19px;
@@ -3656,17 +3654,17 @@ ytm15-comment-replies .comment-pfp-container {
     padding: 2px 0;
     margin-right: -16px;
 }
-.comment-icons {
+.comment-icons img {
     display: flex;
     justify-content: center;
     height: 36px;
     align-items: center;
 }
-ytm15-comment-replies .comment-icons#cm-icon-reply {
+ytm15-comment-replies .comment-icons#cm-icon-reply img {
     visibility: hidden;
     pointer-events: none;
 }
-.comment-action-icon {
+.comment-action-icon img {
     width: 16px;
     height: 16px;
 }
@@ -3676,7 +3674,7 @@ button.comment-icon-button {
     padding: 3px;
     margin-right: 3px;
 }
-.comment-icons#cm-icon-like {
+.comment-icons#cm-icon-like img {
     margin-bottom: 6px;
 }
 .comment-count {
@@ -3799,13 +3797,13 @@ ytm15-backstage-post {
     padding: 2px 0;
     margin-right: -16px;
 }
-.post-icons {
+.post-icons img {
     display: flex;
     justify-content: center;
     height: 36px;
     align-items: center;
 }
-.post-action-icon {
+.post-action-icon img {
     width: 16px;
     height: 16px;
 }
@@ -3815,14 +3813,14 @@ button.post-icon-button {
     padding: 3px;
     margin-right: 3px;
 }
-.post-icons#post-icon-like {
+.post-icons#post-icon-like img {
     margin-bottom: 6px;
 }
 .post-count {
     flex-shrink: 0;
     min-width: 40px;
 }
-#post-icon-dislike .post-count {
+#post-icon-dislike .post-count img {
     min-width: 30px;
 }
 .post-attachment:not(:empty) {
@@ -3846,13 +3844,12 @@ button.post-icon-button {
     background-color: rgba(0,0,0,0.1);
     border-radius: 4px;
 }
-ytm15-icon.post-image-icon {
+ytm15-icon.post-image-icon img {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: 2;
     margin: 5px;
-    color: #f1f1f1;
     background-color: rgba(0,0,0,0.7);
     padding: 2px;
     border-radius: 3px;
@@ -3916,7 +3913,7 @@ ytm15-icon.post-image-icon {
     margin-bottom: 48px;
 }
 /*html*/:not(.dark) .pivot-bar-item-tab.has-ripple::before {
-    background-color: rgba(238, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 ytm15-pivot-bar {
     display: flex;
@@ -3929,14 +3926,14 @@ ytm15-pivot-bar {
     z-index: 2;
     height: 52px;
     background-color: #fff;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
     font-size: 1.1rem;
 }
 .shorter-pivot ytm15-pivot-bar {
     height: 48px;
 }
-.shorter-pivot .pivot-bar-tab-icon {
+.shorter-pivot .pivot-bar-tab-icon img {
     width: 24px;
     height: 24px;
 }
@@ -3979,12 +3976,24 @@ ytm15-pivot-bar {
     text-overflow: ellipsis;
     margin-top: 2px;
 }
-.pivot-bar-tab-icon {
-    width: 30px;
-    height: 30px;
+.pivot-bar-tab-icon img {
+    width: 24px;
+    height: 24px;
 }
-.pivot-bar-item-tab[aria-selected="true"] {
-    color: #e00;
+.pivot-bar-item-tab[aria-selected="true"] .pivot-bar-tab-icon.w2w-icon {
+    content: url("ic_tab_home_outline_pressed.png");
+}
+.pivot-bar-item-tab[aria-selected="true"] .pivot-bar-tab-icon.explore-icon {
+    content: url("ic_tab_explore_outline_pressed.png");
+}
+.pivot-bar-item-tab[aria-selected="true"] .pivot-bar-tab-icon.subscriptions-icon {
+    content: url("ic_tab_subscriptions_outline_pressed.png");
+}
+.pivot-bar-item-tab[aria-selected="true"] .pivot-bar-tab-icon.notifications-icon {
+    content: url("ic_tab_notifications_outline_pressed.png");
+}
+.pivot-bar-item-tab[aria-selected="true"] .pivot-bar-tab-icon.library-icon {
+    content: url("ic_tab_library_outline_pressed.png");
 }
 ytm15-pivot-bar.no-shadow {
     border-top: 1.2px solid rgba(0,0,0,0.1);
@@ -4330,9 +4339,8 @@ label.radio-label {
 .slim-style-2017 .video-metadata-header-content ytm15-icon path {
     transform: scale(1.5);
 }
-.slim-style-2017 .video-metadata-header-content ytm15-icon {
+.slim-style-2017 .video-metadata-header-content ytm15-icon img {
     margin-right: 0;
-    color: rgba(0,0,0,0.4);
 }
 .slim-style-2017 .video-metadata-actions {
     padding: 0px 4px 13px;
@@ -4355,7 +4363,7 @@ label.radio-label {
 .slim-style-2017 .video-metadata-actions button .button-text {
     margin-top: 8px;
 }
-.slim-style-2017 .video-metadata-actions ytm15-icon {
+.slim-style-2017 .video-metadata-actions ytm15-icon img {
     width: 24px;
     height: 24px;
 }

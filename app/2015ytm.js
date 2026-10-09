@@ -91,61 +91,137 @@ function localStorageChange(){
 DISABLE_YTM15_APP_BORDER_expflag = localStorage.getItem("DISABLE_YTM15_APP_BORDER");
 DEFAULT_POPUP_MENU_STYLE_expflag = localStorage.getItem("DEFAULT_POPUP_MENU_STYLE");
 if (DEFAULT_POPUP_MENU_STYLE_expflag == undefined) {
-localStorage.setItem("DEFAULT_POPUP_MENU_STYLE", "Material");
+localStorage.setItem("DEFAULT_POPUP_MENU_STYLE", "YouTube");
 DEFAULT_POPUP_MENU_STYLE_expflag = localStorage.getItem("DEFAULT_POPUP_MENU_STYLE");
 }
 DEFAULT_MEDIA_POPUP_MENU_STYLE_expflag = localStorage.getItem("DEFAULT_MEDIA_POPUP_MENU_STYLE");
 if (DEFAULT_MEDIA_POPUP_MENU_STYLE_expflag == undefined) {
-localStorage.setItem("DEFAULT_MEDIA_POPUP_MENU_STYLE", "Holo");
+localStorage.setItem("DEFAULT_MEDIA_POPUP_MENU_STYLE", "YouTube");
 DEFAULT_MEDIA_POPUP_MENU_STYLE_expflag = localStorage.getItem("DEFAULT_MEDIA_POPUP_MENU_STYLE");
 }
 WEB_ENABLE_DARK_THEME_OPTION_expflag = localStorage.getItem("WEB_ENABLE_DARK_THEME_OPTION");
+if (WEB_ENABLE_DARK_THEME_OPTION_expflag == undefined) {
+localStorage.setItem("WEB_ENABLE_DARK_THEME_OPTION", "true");
+WEB_ENABLE_DARK_THEME_OPTION_expflag = localStorage.getItem("WEB_ENABLE_DARK_THEME_OPTION");
+}
 DARK_THEME_option = localStorage.getItem("DARK_THEME");
 WEB_CHANNELS_HEADER_NO_LEFT_MARGIN_expflag = localStorage.getItem("WEB_CHANNELS_HEADER_NO_LEFT_MARGIN");
+if (WEB_CHANNELS_HEADER_NO_LEFT_MARGIN_expflag == undefined) {
+localStorage.setItem("WEB_CHANNELS_HEADER_NO_LEFT_MARGIN", "true");
+WEB_CHANNELS_HEADER_NO_LEFT_MARGIN_expflag = localStorage.getItem("WEB_CHANNELS_HEADER_NO_LEFT_MARGIN");
+}
 MENU_DISABLE_CANCEL_BUTTON_expflag = localStorage.getItem("MENU_DISABLE_CANCEL_BUTTON");
 if (MENU_DISABLE_CANCEL_BUTTON_expflag == undefined) {
 localStorage.setItem("MENU_DISABLE_CANCEL_BUTTON", "true");
 MENU_DISABLE_CANCEL_BUTTON_expflag = localStorage.getItem("MENU_DISABLE_CANCEL_BUTTON");
 }
 CHANNELS_SEPARATE_VIDS_SHORTS_LIVE_TABS_expflag = localStorage.getItem("CHANNELS_SEPARATE_VIDS_SHORTS_LIVE_TABS");
-WEB_ENABLE_PIVOT_BAR_expflag = localStorage.getItem("WEB_ENABLE_PIVOT_BAR");
-COMPACT_ITEM_LARGER_THUMBNAILS_expflag = localStorage.getItem("COMPACT_ITEM_LARGER_THUMBNAILS");
-PIVOT_DISABLE_SHADOW_expflag = localStorage.getItem("PIVOT_DISABLE_SHADOW");
-TIMESTATUS_NEW_STYLE_expflag = localStorage.getItem("TIMESTATUS_NEW_STYLE");
-LIGHTER_BORDER_COLORS_expflag = localStorage.getItem("LIGHTER_BORDER_COLORS");
-HEADER_SHORTER_SIZE_expflag = localStorage.getItem("HEADER_SHORTER_SIZE");
-HEADER_WHITE_BTN_COLORS_expflag = localStorage.getItem("HEADER_WHITE_BTN_COLORS");
-HEADER_RED_STYLE_expflag = localStorage.getItem("HEADER_RED_STYLE");
-if (HEADER_RED_STYLE_expflag == undefined) {
-localStorage.setItem("HEADER_RED_STYLE", "true");
-HEADER_RED_STYLE_expflag = localStorage.getItem("HEADER_RED_STYLE");
+if (CHANNELS_SEPARATE_VIDS_SHORTS_LIVE_TABS_expflag == undefined) {
+localStorage.setItem("CHANNELS_SEPARATE_VIDS_SHORTS_LIVE_TABS", "true");
+CHANNELS_SEPARATE_VIDS_SHORTS_LIVE_TABS_expflag = localStorage.getItem("CHANNELS_SEPARATE_VIDS_SHORTS_LIVE_TABS");
 }
+WEB_ENABLE_PIVOT_BAR_expflag = localStorage.getItem("WEB_ENABLE_PIVOT_BAR");
+if (WEB_ENABLE_PIVOT_BAR_expflag == undefined) {
+localStorage.setItem("WEB_ENABLE_PIVOT_BAR", "true");
+WEB_ENABLE_PIVOT_BAR_expflag = localStorage.getItem("WEB_ENABLE_PIVOT_BAR");
+}
+COMPACT_ITEM_LARGER_THUMBNAILS_expflag = localStorage.getItem("COMPACT_ITEM_LARGER_THUMBNAILS");
+if (COMPACT_ITEM_LARGER_THUMBNAILS_expflag == undefined) {
+localStorage.setItem("COMPACT_ITEM_LARGER_THUMBNAILS", "true");
+COMPACT_ITEM_LARGER_THUMBNAILS_expflag = localStorage.getItem("COMPACT_ITEM_LARGER_THUMBNAILS");
+}
+PIVOT_DISABLE_SHADOW_expflag = localStorage.getItem("PIVOT_DISABLE_SHADOW");
+if (PIVOT_DISABLE_SHADOW_expflag == undefined) {
+localStorage.setItem("PIVOT_DISABLE_SHADOW", "true");
+PIVOT_DISABLE_SHADOW_expflag = localStorage.getItem("PIVOT_DISABLE_SHADOW");
+}
+TIMESTATUS_NEW_STYLE_expflag = localStorage.getItem("TIMESTATUS_NEW_STYLE");
+if (TIMESTATUS_NEW_STYLE_expflag == undefined) {
+localStorage.setItem("TIMESTATUS_NEW_STYLE", "true");
+TIMESTATUS_NEW_STYLE_expflag = localStorage.getItem("TIMESTATUS_NEW_STYLE");
+}
+LIGHTER_BORDER_COLORS_expflag = localStorage.getItem("LIGHTER_BORDER_COLORS");
+if (LIGHTER_BORDER_COLORS_expflag == undefined) {
+localStorage.setItem("LIGHTER_BORDER_COLORS", "true");
+LIGHTER_BORDER_COLORS_expflag = localStorage.getItem("LIGHTER_BORDER_COLORS");
+}
+HEADER_SHORTER_SIZE_expflag = localStorage.getItem("HEADER_SHORTER_SIZE");
+if (HEADER_SHORTER_SIZE_expflag == undefined) {
+localStorage.setItem("HEADER_SHORTER_SIZE", "true");
+HEADER_SHORTER_SIZE_expflag = localStorage.getItem("HEADER_SHORTER_SIZE");
+}
+HEADER_WHITE_BTN_COLORS_expflag = localStorage.getItem("HEADER_WHITE_BTN_COLORS");
+if (HEADER_WHITE_BTN_COLORS_expflag == undefined) {
+localStorage.setItem("HEADER_WHITE_BTN_COLORS", "true");
+HEADER_WHITE_BTN_COLORS_expflag = localStorage.getItem("HEADER_WHITE_BTN_COLORS");
+}
+HEADER_RED_STYLE_expflag = localStorage.getItem("HEADER_RED_STYLE");
 PIVOT_SHORTER_SIZE_expflag = localStorage.getItem("PIVOT_SHORTER_SIZE");
+if (PIVOT_SHORTER_SIZE_expflag == undefined) {
+localStorage.setItem("PIVOT_SHORTER_SIZE", "true");
+PIVOT_SHORTER_SIZE_expflag = localStorage.getItem("PIVOT_SHORTER_SIZE");
+}
 DARK_THEME_HASH_COLOR_expflag = localStorage.getItem("DARK_THEME_HASH_COLOR");
 if (DARK_THEME_HASH_COLOR_expflag == undefined) {
 localStorage.setItem("DARK_THEME_HASH_COLOR", "#30");
 DARK_THEME_HASH_COLOR_expflag = localStorage.getItem("DARK_THEME_HASH_COLOR");
 }
 SUBSCRIBE_BTN_UPPERCASE_expflag = localStorage.getItem("SUBSCRIBE_BTN_UPPERCASE");
+if (SUBSCRIBE_BTN_UPPERCASE_expflag == undefined) {
+localStorage.setItem("SUBSCRIBE_BTN_UPPERCASE", "true");
+SUBSCRIBE_BTN_UPPERCASE_expflag = localStorage.getItem("SUBSCRIBE_BTN_UPPERCASE");
+}
 WATCH_USE_MTRL_ICONS_expflag = localStorage.getItem("WATCH_USE_MTRL_ICONS");
+if (WATCH_USE_MTRL_ICONS_expflag == undefined) {
+localStorage.setItem("WATCH_USE_MTRL_ICONS", "true");
+WATCH_USE_MTRL_ICONS_expflag = localStorage.getItem("WATCH_USE_MTRL_ICONS");
+}
 BTN_FONT_WEIGHT_500_expflag = localStorage.getItem("BTN_FONT_WEIGHT_500");
+if (BTN_FONT_WEIGHT_500_expflag == undefined) {
+localStorage.setItem("BTN_FONT_WEIGHT_500", "true");
+BTN_FONT_WEIGHT_500_expflag = localStorage.getItem("BTN_FONT_WEIGHT_500");
+}
 WATCH_AUTONAV_BAR_STYLE_expflag = localStorage.getItem("WATCH_AUTONAV_BAR_STYLE");
 if (WATCH_AUTONAV_BAR_STYLE_expflag == undefined) {
-localStorage.setItem("WATCH_AUTONAV_BAR_STYLE", "2015");
+localStorage.setItem("WATCH_AUTONAV_BAR_STYLE", "2016");
 WATCH_AUTONAV_BAR_STYLE_expflag = localStorage.getItem("WATCH_AUTONAV_BAR_STYLE");
 }
 WATCH_AUTONAV_TITLE_USE_UPNEXT_expflag = localStorage.getItem("WATCH_AUTONAV_TITLE_USE_UPNEXT");
+if (WATCH_AUTONAV_TITLE_USE_UPNEXT_expflag == undefined) {
+localStorage.setItem("WATCH_AUTONAV_TITLE_USE_UPNEXT", "true");
+WATCH_AUTONAV_TITLE_USE_UPNEXT_expflag = localStorage.getItem("WATCH_AUTONAV_TITLE_USE_UPNEXT");
+}
 APP_DEMATERIALIZE_UI_expflag = localStorage.getItem("APP_DEMATERIALIZE_UI");
 DISABLE_TAB_ICONS_expflag = localStorage.getItem("DISABLE_TAB_ICONS");
 WATCH_ENABLE_NEW_UI_expflag = localStorage.getItem("WATCH_ENABLE_NEW_UI");
+if (WATCH_ENABLE_NEW_UI_expflag == undefined) {
+localStorage.setItem("WATCH_ENABLE_NEW_UI", "true");
+WATCH_ENABLE_NEW_UI_expflag = localStorage.getItem("WATCH_ENABLE_NEW_UI");
+}
 WATCH_TILTE_FONT_WEIGHT_500_expflag = localStorage.getItem("WATCH_TILTE_FONT_WEIGHT_500");
+if (WATCH_TILTE_FONT_WEIGHT_500_expflag == undefined) {
+localStorage.setItem("WATCH_TILTE_FONT_WEIGHT_500", "true");
+WATCH_TILTE_FONT_WEIGHT_500_expflag = localStorage.getItem("WATCH_TILTE_FONT_WEIGHT_500");
+}
 USE_NEW_SUBSCRIBE_ICON_expflag = localStorage.getItem("USE_NEW_SUBSCRIBE_ICON");
+if (USE_NEW_SUBSCRIBE_ICON_expflag == undefined) {
+localStorage.setItem("USE_NEW_SUBSCRIBE_ICON", "true");
+USE_NEW_SUBSCRIBE_ICON_expflag = localStorage.getItem("USE_NEW_SUBSCRIBE_ICON");
+}
 LIFT_PIVOT_BAR_FOR_PHONE_expflag = localStorage.getItem("LIFT_PIVOT_BAR_FOR_PHONE");
 PIVOT_SHRINK_SPACING_expflag = localStorage.getItem("PIVOT_SHRINK_SPACING");
 PIVOT_HIDE_NOTIFICATIONS_expflag = localStorage.getItem("PIVOT_HIDE_NOTIFICATIONS");
+if (PIVOT_HIDE_NOTIFICATIONS_expflag == undefined) {
+localStorage.setItem("PIVOT_HIDE_NOTIFICATIONS", "true");
+PIVOT_HIDE_NOTIFICATIONS_expflag = localStorage.getItem("PIVOT_HIDE_NOTIFICATIONS");
+}
 PIVOT_NOTIFICATIONS_IS_ACTIVITY_expflag = localStorage.getItem("PIVOT_NOTIFICATIONS_IS_ACTIVITY");
 APP_HELVETICA_NEUE_FONT_expflag = localStorage.getItem("APP_HELVETICA_NEUE_FONT");
 APP_NEW_ERROR_SCREEN_expflag = localStorage.getItem("APP_NEW_ERROR_SCREEN");
+if (APP_NEW_ERROR_SCREEN_expflag == undefined) {
+localStorage.setItem("APP_NEW_ERROR_SCREEN", "true");
+APP_NEW_ERROR_SCREEN_expflag = localStorage.getItem("APP_NEW_ERROR_SCREEN");
+}
 APP_CUSTOM_INVIDIOUS_URL_expflag = localStorage.getItem("APP_CUSTOM_INVIDIOUS_URL");
 if (APP_CUSTOM_INVIDIOUS_URL_expflag == undefined) {
   localStorage.setItem("APP_CUSTOM_INVIDIOUS_URL", "https://api.allorigins.win/raw?url=https://yt.omada.cafe/");
@@ -162,6 +238,10 @@ HEADER_NO_SHADOW_expflag = localStorage.getItem("HEADER_NO_SHADOW");
 DARK_THEME_SEPERATE_BACKGROUND_COLOR_expflag = localStorage.getItem("DARK_THEME_SEPERATE_BACKGROUND_COLOR");
 APP_UNDERLINE_BUTTONS_expflag = localStorage.getItem("APP_UNDERLINE_BUTTONS");
 HEADER_CAST_BUTTON_AS_URL_BOX_expflag = localStorage.getItem("HEADER_CAST_BUTTON_AS_URL_BOX");
+if (HEADER_CAST_BUTTON_AS_URL_BOX_expflag == undefined) {
+localStorage.setItem("HEADER_CAST_BUTTON_AS_URL_BOX", "true");
+HEADER_CAST_BUTTON_AS_URL_BOX_expflag = localStorage.getItem("HEADER_CAST_BUTTON_AS_URL_BOX");
+}
 HEADER_CAST_ALTERNATE_ICON_expflag = localStorage.getItem("HEADER_CAST_ALTERNATE_ICON");
 APP_STOP_TEXT_SELECTION_expflag = localStorage.getItem("APP_STOP_TEXT_SELECTION");
 if (APP_STOP_TEXT_SELECTION_expflag == undefined) {
@@ -170,8 +250,7 @@ if (APP_STOP_TEXT_SELECTION_expflag == undefined) {
 }
 
 newErrorHtml = `<button class="error-content" onClick="location.reload();">
-<!-- <img class="error-icon ytm15-img" src="alert_error.png"></img><br> -->
-<div class="transparent-text error-icon-v2" style="border-radius:50%;background: #c1c1c1;display: inline-block;width: 3.5rem;/*! padding: 10px; */font-size: 30px;font-weight: 500;height: 3.5rem;text-align: center;vertical-align: unset;margin-bottom: 1rem;">!</div><br>
+<img class="error-icon ytm15-img" src="alert_error.png"></img><br>
 <span class="error-text">Error loading<br>Tap to retry</span>
 </div></button>`;
 if (PIVOT_SHRINK_SPACING_expflag == undefined) {
@@ -256,6 +335,12 @@ if (APP_DEMATERIALIZE_UI_expflag == "true") {
     documentHTML.classList.add("style-2013");
 } else {
     documentHTML.classList.remove("style-2013");
+}
+
+if (USE_NEW_SUBSCRIBE_ICON_expflag == "true") {
+    documentHTML.classList.add("no-subscribe-icon");
+} else {
+    documentHTML.classList.remove("no-subscribe-icon");
 }
 
 if (LIFT_PIVOT_BAR_FOR_PHONE_expflag == "true") {
@@ -460,10 +545,6 @@ function renderSubscribeBtn(parent) {
 <img class="ytm15-img-icon ytm15-img button-icon subscribe-icon" src="ic_subscribe.png"></img><div class="button-text">${Subscribe_text_string}</div>
 </button>`
     }
-    if (USE_NEW_SUBSCRIBE_ICON_expflag == "true") {
-    mtrlBtnCont.querySelector("img").src = "subscribe_mark_2018.png";
-    mtrlBtnCont.querySelector("img").classList.add("style-2018");
-    }
     parent.appendChild(mtrlBtnCont);
 }
 
@@ -505,11 +586,11 @@ function renderDropdownSelect(ddText, parent, ddItems, ddisChannelSort) {
     dropdownSelect.classList.add("dropdown-select", "has-ripple");
     dropdownSelect.innerHTML = `<div class="dropdown-select-point"></div>`;
     if (ddisChannelSort) {
-    dropdownSelect.innerHTML = `<div class="dropdown-select-point"></div><ytm15-icon class="sort-icon" style="
+    dropdownSelect.innerHTML = `<div class="dropdown-select-point"></div><img class="ytm15-icon sort-icon" src="ic_dropdown_select_outline.png" style="
     width: 26px;
     height: 26px;
     margin: -2px 0;
-"><svg viewBox="0 0 24 24" fill=""><path d="M3,13H15V11H3M3,6V8H21V6M3,18H9V16H3V18Z"></path></svg></ytm15-icon>`;
+">`;
     }
     const dropdownSelectText = document.createElement("div");
     var ddItemsResult = ddItems.filter(function(obj){
@@ -585,7 +666,7 @@ function renderDropdownSelect(ddText, parent, ddItems, ddisChannelSort) {
         };
 
     dropdownSelect.appendChild(dropdownSelectText);
-    dropdownSelect.innerHTML += `<ytm15-icon class="dropdown-arrow-icon"><svg viewBox="0 0 24 24" fill=""><path d="M7,10L12,15L17,10H7Z"></path></svg></ytm15-icon>`;
+    dropdownSelect.innerHTML += `<img class="ytm15-icon dropdown-arrow-icon" src="ic_expand_outline.png">`;
     var dropdownArrowIcon = dropdownSelect.querySelector(".dropdown-arrow-icon");
     var dropdownPoint = dropdownSelect.querySelector(".dropdown-select-point");
     parent.appendChild(dropdownSelect);
@@ -765,15 +846,15 @@ ${pinnedCMBadge}
 </div>
 <div class="comment-details">
 <div class="comment-icons" id="cm-icon-like">
-<button class="icon-button comment-icon-button" aria-label="Like this comment"><ytm15-icon class="like-icon comment-action-icon"><svg viewBox="0 0 24 24" fill=""><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path></svg></ytm15-icon></button>
+<button class="icon-button comment-icon-button" aria-label="Like this comment"><img class="ytm15-icon like-icon comment-action-icon" src="ic_comment_like_outline.png"></button>
 <span class="comment-count">${item.likeCount.toLocaleString()}</span>
 </div>
 <div class="comment-icons" id="cm-icon-dislike">
-<button class="icon-button comment-icon-button" aria-label="Dislike this comment"><ytm15-icon class="dislike-icon comment-action-icon"><svg viewBox="0 0 24 24" fill=""><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg></ytm15-icon></button>
+<button class="icon-button comment-icon-button" aria-label="Dislike this comment"><img class="ytm15-icon dislike-icon comment-action-icon" src="ic_comment_dislike_outline.png"></button>
 <span class="comment-count"></span>
 </div>
 <div class="comment-icons" id="cm-icon-reply">
-<button class="icon-button comment-icon-button" aria-label="Reply to this comment"><ytm15-icon class="reply-icon comment-action-icon"><svg viewBox="0 0 24 24" fill=""><path d="M18,8H6V6H18V8M18,11H6V9H18V11M18,14H6V12H18V14M22,4A2,2 0 0,0 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"></path></svg></ytm15-icon>
+<button class="icon-button comment-icon-button" aria-label="Reply to this comment"><img class="ytm15-icon reply-icon comment-action-icon" src="ic_comment_reply_outline.png">
 </button>
 <span class="comment-count">${cmReplyCount}</span>
 </div>
@@ -796,7 +877,8 @@ ${pinnedCMBadge}
       commentFooter.classList.add("comment-footer");
       commentFooter.appendChild(commentCont.querySelector(".comment-published-time"));
       commentCont.querySelector(".comment-text").insertAdjacentElement("afterend", commentFooter);
-      commentCont.querySelector(".comment-details").innerHTML = `<div class="comment-icons" id="cm-icon-like">
+      commentCont.querySelector(".comment-details").innerHTML = `<div class="comment-
+s" id="cm-icon-like">
 <button class="icon-button comment-icon-button" aria-label="Like this comment"><img class="ytm15-img-icon ytm15-img like-icon comment-action-icon" src="ic_comment_like.png"></button>
 <span class="comment-count">${item.likeCount.toLocaleString()}</span>
 </div>
@@ -996,7 +1078,7 @@ function renderPosts(parent, postId, postSource){
     postAttachment = "";
     if (item.attachment){
     if (item.attachment.type == "image") {
-    postAttachment = `<div class="post-image-container single-image"><img class="post-img ytm15-img lazy" loading="lazy" src="${item.attachment.image.pop().url}"></img><ytm15-icon class="image-icon post-image-icon"><svg viewBox="0 0 24 24" fill=""><path d="M8.5,13.5L11,16.5L14.5,12L19,18H5M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19Z"></path></svg></ytm15-icon></div>`;
+    postAttachment = `<div class="post-image-container single-image"><img class="post-img ytm15-img lazy" loading="lazy" src="${item.attachment.image.pop().url}"></img><img class="ytm15-icon image-icon post-image-icon" src="ic_post_image_outline.png"></div>`;
     } else if (item.attachment.type == "multi_image") {
     postAttachment = `<div class="post-multi-image-container">`;
     
@@ -1004,7 +1086,7 @@ function renderPosts(parent, postId, postSource){
     postNumber = 0;
     item.attachment.image.forEach(function(item1){
     postNumber += 1;
-    postAttachment += `<div class="post-img-container-multi"><div class="post-image-container"><img class="post-img ytm15-img lazy" loading="lazy" src="${item1.pop().url}"></img><ytm15-icon class="image-multi-icon post-image-icon"><svg viewBox="0 0 24 24" fill=""><path d="M22,16V4A2,2 0 0,0 20,2H8A2,2 0 0,0 6,4V16A2,2 0 0,0 8,18H20A2,2 0 0,0 22,16M11,12L13.03,14.71L16,11L20,16H8M2,6V20A2,2 0 0,0 4,22H18V20H4V6"></path></svg></ytm15-icon><div class="post-image-page-number-indicator">${postNumber}/${multiImageLength}</div></div></div>`
+    postAttachment += `<div class="post-img-container-multi"><div class="post-image-container"><img class="post-img ytm15-img lazy" loading="lazy" src="${item1.pop().url}"></img><img class="ytm15-icon image-multi-icon post-image-icon" src="ic_post_image_outline.png"><div class="post-image-page-number-indicator">${postNumber}/${multiImageLength}</div></div></div>`
     });
     
     postAttachment += `</div>`
@@ -1020,15 +1102,15 @@ function renderPosts(parent, postId, postSource){
 <div class="post-attachment">${postAttachment}</div>
 <div class="post-details">
 <div class="post-icons" id="post-icon-like">
-<button class="icon-button post-icon-button" aria-label="Like this post"><ytm15-icon class="like-icon post-action-icon"><svg viewBox="0 0 24 24" fill=""><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path></svg></ytm15-icon></button>
+<button class="icon-button post-icon-button" aria-label="Like this post"><img class="ytm15-icon like-icon post-action-icon" src="ic_like_outline.png"></button>
 <span class="post-count">${postLikeCount}</span>
 </div>
 <div class="post-icons" id="post-icon-dislike">
-<button class="icon-button post-icon-button" aria-label="Dislike this post"><ytm15-icon class="dislike-icon post-action-icon"><svg viewBox="0 0 24 24" fill=""><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></svg></ytm15-icon></button>
+<button class="icon-button post-icon-button" aria-label="Dislike this post"><img class="ytm15-icon dislike-icon post-action-icon" src="ic_dislike_outline.png"></button>
 <span class="post-count"></span>
 </div>
 <div class="post-icons" id="post-icon-reply">
-<button class="icon-button post-icon-button" aria-label="Reply to this post"><ytm15-icon class="reply-icon post-action-icon"><svg viewBox="0 0 24 24" fill=""><path d="M18,8H6V6H18V8M18,11H6V9H18V11M18,14H6V12H18V14M22,4A2,2 0 0,0 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"></path></svg></ytm15-icon>
+<button class="icon-button post-icon-button" aria-label="Reply to this post"><img class="ytm15-icon reply-icon post-action-icon" src="ic_reply_outline.png">
 </button>
 <span class="post-count">${postReplyCount}</span>
 </div>
@@ -1097,31 +1179,31 @@ function renderPivotBar(){
     {
       "name": Home_text_string,
       "pivotName": "w2w",
-      "iconPath": "M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z",
+      "iconPath": "ic_tab_home_outline.png",
       "link": ""
     },
     {
       "name": Trending_text_string,
       "pivotName": "explore",
-      "iconPath": "M14.72,17.64c-0.32,0.28-0.83,0.56-1.23,0.69c-1.14,0.38-2.27-0.07-3.05-0.71c-0.11-0.09-0.07-0.26,0.06-0.31  c1.19-0.38,1.89-1.3,2.09-2.22c0.2-0.88-0.16-1.64-0.31-2.51c-0.12-0.72-0.11-1.34,0.12-2c0.04-0.11,0.2-0.13,0.25-0.02  c0.71,1.59,2.72,2.29,3.07,4.04c0.03,0.16,0.05,0.32,0.05,0.48C15.8,16.02,15.4,17.03,14.72,17.64 M17.55,9.62  c-0.75-0.7-1.63-1.2-2.36-1.93c-1.49-1.51-2-3.64-1.34-5.66c0.11-0.33-0.2-0.63-0.51-0.49c-0.71,0.31-1.39,0.76-1.98,1.24  C8.38,5.2,7.27,9.26,8.65,12.92c0.03,0.13,0.08,0.26,0.08,0.39c0,0.26-0.16,0.5-0.39,0.6c-0.26,0.12-0.54,0.04-0.74-0.15  c-0.06-0.06-0.12-0.12-0.17-0.19c-0.96-1.26-1.32-2.95-1.05-4.52c0.07-0.4-0.43-0.62-0.67-0.31c-1.21,1.57-1.81,3.67-1.69,5.65  c0.04,0.59,0.13,1.18,0.29,1.75c0.2,0.71,0.49,1.4,0.88,2.03c1.21,2.01,3.34,3.46,5.63,3.75c2.43,0.31,5.06-0.14,6.94-1.87  c2.09-1.93,2.85-5,1.73-7.68c-0.04-0.11-0.09-0.21-0.14-0.32c-0.25-0.52-0.55-1.01-0.91-1.45C18.17,10.24,17.87,9.92,17.55,9.62z",
+      "iconPath": "ic_tab_explore_outline.png",
       "link": "trending"
     },
     {
       "name": Subs_text_string,
       "pivotName": "subscriptions",
-      "iconPath": "M20,8H4V6H20V8M18,2H6V4H18V2M22,12V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V12A2,2 0 0,1 4,10H20A2,2 0 0,1 22,12M16,16L10,12.73V19.26L16,16Z",
+      "iconPath": "ic_tab_subscriptions_outline.png",
       "link": "subscriptions"
     },
     {
       "name": Notifs_text_string,
       "pivotName": "notifications",
-      "iconPath": "M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21",
+      "iconPath": "ic_tab_notifications_outline.png",
       "link": "notifications"
     },
     {
       "name": Library_text_string,
       "pivotName": "library",
-      "iconPath": "M10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6H12L10,4Z",
+      "iconPath": "ic_tab_library_outline.png",
       "link": "library"
     }
     ];
@@ -1136,7 +1218,7 @@ function renderPivotBar(){
       }
       pivotBarItem.innerHTML = `<div role="tab" aria-selected="${pivotTabSelected}" class="pivot-bar-item-tab has-ripple pivot-${item.pivotName}">
 <div class="pivot-tab-items">
-<ytm15-icon class="pivot-bar-tab-icon ${item.pivotName}-icon"><svg viewBox="0 0 24 24" fill=""><path d="${item.iconPath}"></path></svg></ytm15-icon>
+<ytm15-icon class="pivot-bar-tab-icon ${item.pivotName}-icon"><img src="${item.iconPath}"></ytm15-icon>
 <div class="pivot-bar-item-title">${item.name}</div>
 </div>
 </div>`;
@@ -1188,7 +1270,7 @@ function renderCompactMediaItem(parent, parentName, itemVideoId, itemThumbnail, 
         } else if (mediaType == "hashtag") {
         thumbnail.href = "#" + itemVideoId;
         }
-        if (mediaType == "video" || mediaType == "shortVideo") {
+        if (mediaType == "video" || mediaType == "shortVideo" || mediaType == "shorts") {
         thumbnail.onclick = function(){
         if (!app.querySelector("#watchpageFrame_Container")) {
         app.insertAdjacentElement("afterbegin", watchContainer);
@@ -1391,7 +1473,7 @@ function renderCompactMediaItem(parent, parentName, itemVideoId, itemThumbnail, 
         } else if (mediaType == "hashtag") {
         metaContent.href = "#" + itemVideoId;
         }
-        if (mediaType == "video" || mediaType == "shortVideo") {
+        if (mediaType == "video" || mediaType == "shortVideo" || mediaType == "shorts") {
         metaContent.onclick = function(){
         if (!app.querySelector("#watchpageFrame_Container")) {
         app.insertAdjacentElement("afterbegin", watchContainer);
@@ -1478,7 +1560,7 @@ function renderCompactMediaItem(parent, parentName, itemVideoId, itemThumbnail, 
         };
         menuBtn.setAttribute("aria-label", "Action menu");
         menuBtn.setAttribute("aria-haspopup", "true");
-        menuBtn.innerHTML = `<ytm15-icon class="menu-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></ytm15-icon>`;
+        menuBtn.innerHTML = `<ytm15-icon class="menu-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z"></path></svg></ytm15-icon>`;
         if (APP_DEMATERIALIZE_UI_expflag == "true") {
         menuBtn.innerHTML = `<img class="ytm15-img-icon ytm15-img menu-icon inactive" src="contextual_menu_anchor_normal.png"><img class="ytm15-img-icon ytm15-img menu-icon active" src="contextual_menu_anchor_pressed.png">`;
         };
@@ -1821,7 +1903,7 @@ function renderMediaItem(parent, parentName, itemVideoId, itemThumbnail, itemLen
         };
         menuBtn.setAttribute("aria-label", "Action menu");
         menuBtn.setAttribute("aria-haspopup", "true");
-        menuBtn.innerHTML = `<ytm15-icon class="menu-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></ytm15-icon>`;
+        menuBtn.innerHTML = `<ytm15-icon class="menu-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z"></path></svg></ytm15-icon>`;
         if (APP_DEMATERIALIZE_UI_expflag == "true") {
         menuBtn.innerHTML = `<img class="ytm15-img-icon ytm15-img menu-icon inactive" src="contextual_menu_anchor_normal.png"><img class="ytm15-img-icon ytm15-img menu-icon active" src="contextual_menu_anchor_pressed.png">`;
         };
@@ -1999,7 +2081,7 @@ document.body.classList.remove("has-watchpage");
 };
 exitWatch.setAttribute("aria-label", "Exit watchpage");
 exitWatch.setAttribute("aria-haspopup", "false");
-exitWatch.innerHTML = `<ytm15-icon class="exit-watch-icon"><svg viewBox="0 0 24 24" fill=""><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></svg></ytm15-icon>`;
+exitWatch.innerHTML = `<img class="ytm15-icon exit-watch-icon" src="ic_expand_outline">`;
 
 const exitIFramePlayer = document.createElement("button");
 exitIFramePlayer.classList.add("icon-button", "watch-action-button", "exit-iframe-button");
@@ -2008,7 +2090,7 @@ exitIFramePlayer.onclick = function(){
 };
 exitIFramePlayer.setAttribute("aria-label", "Exit iFrame Player");
 exitIFramePlayer.setAttribute("aria-haspopup", "false");
-exitIFramePlayer.innerHTML = `<ytm15-icon class="exit-iframe-icon"><svg viewBox="0 0 24 24" fill=""><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></ytm15-icon>`;
+exitIFramePlayer.innerHTML = `<img class="ytm15-icon exit-iframe-icon" src="ic_exit_outline">`;
 
 const exitWatch2 = exitWatch.cloneNode(true);
 exitWatch2.onclick = function(){
@@ -2072,7 +2154,7 @@ document.body.classList.add("has-watchpage");
 };
 openWatch.setAttribute("aria-label", "Open watchpage");
 openWatch.setAttribute("aria-haspopup", "false");
-openWatch.innerHTML = `<ytm15-icon class="open-watch-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path></svg></ytm15-icon>`;
+openWatch.innerHTML = `<img class="ytm15-icon open-watch-icon" src="ic_compress_outline.png">`;
 
 mpContent.onclick = function(e){
 if (e.target == mpContent) {
@@ -2107,7 +2189,7 @@ setTimeout(function() {
 };
 closeVideo.setAttribute("aria-label", "Close video");
 closeVideo.setAttribute("aria-haspopup", "false");
-closeVideo.innerHTML = `<ytm15-icon class="x-icon"><svg viewBox="0 0 24 24" fill=""><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></ytm15-icon>`;
+closeVideo.innerHTML = `<img class="ytm15-icon x-icon" src="ic_exit_outline.png">`;
 
 var playerContListener = SwipeListener(playerCont);
 playerCont.addEventListener('swipe', function (e) {
