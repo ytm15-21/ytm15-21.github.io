@@ -896,7 +896,7 @@ button {
     border-radius: 50%;
 }
 
-ytm15-icon {
+ytm15-icon img {
     display: inline-block;
     flex-shrink: 0;
     width: 24px;
