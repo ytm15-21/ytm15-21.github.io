@@ -2348,7 +2348,7 @@ ytm15-badge:empty, .standalone-badge-supported ytm15-badge:empty {
     width: 30px;
     height: 30px;
 }
-.video-metadata-actions ytm15-icon img {
+.video-metadata-actions ytm15-icon {
     width: 22px;
     height: 22px;
 }

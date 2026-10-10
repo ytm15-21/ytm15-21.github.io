@@ -1559,7 +1559,7 @@ function renderCompactMediaItem(parent, parentName, itemVideoId, itemThumbnail, 
         };
         menuBtn.setAttribute("aria-label", "Action menu");
         menuBtn.setAttribute("aria-haspopup", "true");
-        menuBtn.innerHTML = `<img class="ytm15-icon menu-icon" src="ic_overflow_outline.png">`;
+        menuBtn.innerHTML = `<img class="ytm15-icon menu-icon" src="ic_overflow_outline.png" width="3.33" height="13.33">`;
         if (APP_DEMATERIALIZE_UI_expflag == "true") {
         menuBtn.innerHTML = `<img class="ytm15-img-icon ytm15-img menu-icon inactive" src="contextual_menu_anchor_normal.png"><img class="ytm15-img-icon ytm15-img menu-icon active" src="contextual_menu_anchor_pressed.png">`;
         };
@@ -1902,7 +1902,7 @@ function renderMediaItem(parent, parentName, itemVideoId, itemThumbnail, itemLen
         };
         menuBtn.setAttribute("aria-label", "Action menu");
         menuBtn.setAttribute("aria-haspopup", "true");
-        menuBtn.innerHTML = `<img class="ytm15-icon menu-icon" src="ic_overflow_outline.png">`;
+        menuBtn.innerHTML = `<img class="ytm15-icon menu-icon" src="ic_overflow_outline.png" width="3.33" height="13.33">`;
         if (APP_DEMATERIALIZE_UI_expflag == "true") {
         menuBtn.innerHTML = `<img class="ytm15-img-icon ytm15-img menu-icon inactive" src="contextual_menu_anchor_normal.png"><img class="ytm15-img-icon ytm15-img menu-icon active" src="contextual_menu_anchor_pressed.png">`;
         };

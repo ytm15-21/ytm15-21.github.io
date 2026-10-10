@@ -223,11 +223,11 @@ function renderWatchPage(parent) {
     if (metadataHeader.ariaExpanded == "false") {
     metadataHeader.ariaExpanded = "true";
     metadataHeader.setAttribute("aria-expanded", "true");
-    metaHeaderCont.querySelector("ytm15-icon").ariaExpanded = "true";
-    metaHeaderCont.querySelector("ytm15-icon").ariaLabel = "Show less";
+    metaHeaderCont.querySelector("img.expand-icon").ariaExpanded = "true";
+    metaHeaderCont.querySelector("img.expand-icon").ariaLabel = "Show less";
     /* metaHeaderCont.querySelector("ytm15-icon.expand-icon").classList.replace("expand-icon", "collapse-icon"); */
-    metaHeaderCont.querySelector("ytm15-icon.expand-icon").classList.add("collapse-icon");
-    metaHeaderCont.querySelector("ytm15-icon.expand-icon").classList.remove("expand-icon");
+    metaHeaderCont.querySelector("img.expand-icon").classList.add("collapse-icon");
+    metaHeaderCont.querySelector("img.expand-icon").classList.remove("expand-icon");
     standaloneBadge.classList.add("expanded");
     standaloneBadge.querySelector(".standalone-badge-supported").setAttribute("style", "max-height: " + standaloneBadge.querySelector(".standalone-badge-supported").scrollHeight + "px");
     metadataDescBox.setAttribute("style", "max-height: " + metadataDescBox.scrollHeight + "px");
@@ -235,11 +235,11 @@ function renderWatchPage(parent) {
     } else if (metadataHeader.ariaExpanded == "true") {
     metadataHeader.ariaExpanded = "false";
     metadataHeader.setAttribute("aria-expanded", "false");
-    metaHeaderCont.querySelector("ytm15-icon").ariaExpanded = "false";
-    metaHeaderCont.querySelector("ytm15-icon").ariaLabel = "Show more";
+    metaHeaderCont.querySelector("img.collapse-icon").ariaExpanded = "false";
+    metaHeaderCont.querySelector("img.collapse-icon").ariaLabel = "Show more";
     /* metaHeaderCont.querySelector("ytm15-icon.collapse-icon").classList.replace("collapse-icon", "expand-icon"); */
-    metaHeaderCont.querySelector("ytm15-icon.collapse-icon").classList.add("expand-icon");
-    metaHeaderCont.querySelector("ytm15-icon.collapse-icon").classList.remove("collapse-icon");
+    metaHeaderCont.querySelector("img.collapse-icon").classList.add("expand-icon");
+    metaHeaderCont.querySelector("img.collapse-icon").classList.remove("collapse-icon");
     standaloneBadge.classList.remove("expanded");
     standaloneBadge.querySelector(".standalone-badge-supported").setAttribute("style", "");
     metadataDescBox.setAttribute("style", "");
