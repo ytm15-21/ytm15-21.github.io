@@ -201,7 +201,7 @@ function renderWatchPage(parent) {
       const metaBadge = document.createElement("div");
       metaBadge.classList.add("metadata-badge-container");
       metaBadge.innerHTML = `<ytm15-badge class="metadata-badge soft-background typography-body-1b" data-type="BADGE_STYLE_TYPE_SIMPLE">
-<img class="${item.iconName}" src="${item.iconPath}"> ${item.title}
+<ytm15-icon class="pivot-bar-tab-icon ${item.pivotName}-icon"><img src="${item.iconPath}"></ytm15-icon>
 </ytm15-badge>`;
       badgeCont.appendChild(metaBadge);
     });
@@ -210,7 +210,7 @@ function renderWatchPage(parent) {
     viewCount.innerHTML = `<span class="secondary-text" role="text" aria-label="${Number(data.viewCount).toLocaleString() + " views"}">${Number(data.viewCount).toLocaleString() + " views"}</span>`;
     metaTitleCont.appendChild(viewCount);
 
-    metaHeaderCont.innerHTML = metaHeaderCont.innerHTML + `<img class="ytm15-icon expand-icon" src="ic_expand_outline.png" role="button" aria-label="Show more" aria-expanded="false">`;
+    metaHeaderCont.innerHTML = metaHeaderCont.innerHTML + `<img class="ytm15-icon expand-icon" src="ic_expand_outline.png" width="24" height="24" role="button" aria-label="Show more" aria-expanded="false">`;
 
     const metadataDescBox = document.createElement("div");
     metadataDescBox.classList.add("video-metadata-description-box");
@@ -436,18 +436,15 @@ function renderWatchPage(parent) {
 
     if (WATCH_USE_MTRL_ICONS_expflag == "true") {
     mtrlBtnCont.innerHTML = `<button class="material-button" aria-label="${videoMetadataLikeCountAL}" aria-pressed="false">
-<img class="ytm15-icon like-icon button-icon" src="ic_like_outline.png"><div class="button-text">${videoMetadataLikeCount}</div>
+<img class="ytm15-icon like-icon button-icon" src="ic_like_outline.png" width="24" height="24"><div class="button-text">${videoMetadataLikeCount}</div>
 </button>`
 
     mtrlBtnContDislike.innerHTML = `<button class="material-button" aria-label="${videoMetadataDislikeCountAL}" aria-pressed="false">
-<img class="ytm15-icon dislike-icon button-icon" src="ic_dislike_outline.png"><div class="button-text">${videoMetadataDislikeCount}</div>
+<img class="ytm15-icon dislike-icon button-icon" src="ic_dislike_outline.png" width="24" height="24"><div class="button-text">${videoMetadataDislikeCount}</div>
 </button>`
 
     mtrlBtnContShare.innerHTML = `<button class="material-button" aria-label="${Share_text_string}" aria-pressed="false">
-<img class="ytm15-icon share-icon button-icon" src="ic_share_outline.png" style="
-    transform: scale(1.3);
-    transform-origin: center;
-"><div class="button-text">${Share_text_string}</div>
+<img class="ytm15-icon share-icon button-icon" src="ic_share_outline.png" width="24" height="24"><div class="button-text">${Share_text_string}</div>
 </button>`
 
     metadataActions.classList.add("use-mtrl-icons");

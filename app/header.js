@@ -68,7 +68,7 @@ function renderHeader() {
         backBtn.setAttribute("hidden", "");
     }
     });
-    backBtn.innerHTML = `<img class="ytm15-icon back-arrow" src="ic_back_outline.png">`;
+    backBtn.innerHTML = `<img class="ytm15-icon back-arrow" src="ic_back_outline.png" width="24" height="24">`;
 
     const searchOverlay = document.createElement("div");
     searchOverlay.classList.add("searching-overlay");
@@ -242,9 +242,9 @@ function renderHeader() {
     castBtn.setAttribute("aria-label", SearchYT_text_string);
     castBtn.setAttribute("aria-haspopup", "false");
     if (HEADER_CAST_ALTERNATE_ICON_expflag == "true") {
-	castBtn.innerHTML = `<img class="ytm15-icon search-icon" src="ic_notifications_outline.png">`
+	castBtn.innerHTML = `<img class="ytm15-icon search-icon" src="ic_cast_outline.png" width="24" height="24">`
     } else {
-	castBtn.innerHTML = `<img class="ytm15-icon search-icon" src="ic_cast_outline.png">`
+	castBtn.innerHTML = `<img class="ytm15-icon search-icon" src="ic_outline_outline.png" width="24" height="24">`
     }
     if (window.location.pathname.split("/").slice(3, 4) == "results.html") {
         castBtn.setAttribute("hidden", "");
@@ -265,7 +265,7 @@ function renderHeader() {
     searchBtn.onclick = function(){searching(searchDropdown, input);};
     searchBtn.setAttribute("aria-label", SearchYT_text_string);
     searchBtn.setAttribute("aria-haspopup", "false");
-    searchBtn.innerHTML = `<img class="ytm15-icon search-icon" src="ic_menu_search_outline.png">`;
+    searchBtn.innerHTML = `<img class="ytm15-icon search-icon" src="ic_menu_search_outline.png" width="24" height="24">`;
     if (window.location.pathname.split("/").slice(3, 4) == "results.html") {
     searchBtn.setAttribute("hidden", "");
     }
@@ -282,6 +282,7 @@ function renderHeader() {
 
     const menuBtn = document.createElement("button");
     menuBtn.classList.add("icon-button", "header-button", "menu-button");
+    menuBtn.style.marginRight = "5px";
     menuBtn.onclick = function(){
     menuRenderer();
     menuCont.setAttribute("style", "top: 0; right: 0; position: fixed;");

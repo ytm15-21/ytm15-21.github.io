@@ -666,7 +666,7 @@ function renderDropdownSelect(ddText, parent, ddItems, ddisChannelSort) {
         };
 
     dropdownSelect.appendChild(dropdownSelectText);
-    dropdownSelect.innerHTML += `<img class="ytm15-icon dropdown-arrow-icon" src="ic_expand_outline.png">`;
+    dropdownSelect.innerHTML += `<img class="ytm15-icon dropdown-arrow-icon" src="ic_expand_outline.png" width="24" height="24">`;
     var dropdownArrowIcon = dropdownSelect.querySelector(".dropdown-arrow-icon");
     var dropdownPoint = dropdownSelect.querySelector(".dropdown-select-point");
     parent.appendChild(dropdownSelect);
@@ -846,15 +846,15 @@ ${pinnedCMBadge}
 </div>
 <div class="comment-details">
 <div class="comment-icons" id="cm-icon-like">
-<button class="icon-button comment-icon-button" aria-label="Like this comment"><img class="ytm15-icon like-icon comment-action-icon" src="ic_comment_like_outline.png"></button>
+<button class="icon-button comment-icon-button" aria-label="Like this comment"><img class="ytm15-icon like-icon comment-action-icon" src="ic_comment_like_outline.png" width="24" height="24"></button>
 <span class="comment-count">${item.likeCount.toLocaleString()}</span>
 </div>
 <div class="comment-icons" id="cm-icon-dislike">
-<button class="icon-button comment-icon-button" aria-label="Dislike this comment"><img class="ytm15-icon dislike-icon comment-action-icon" src="ic_comment_dislike_outline.png"></button>
+<button class="icon-button comment-icon-button" aria-label="Dislike this comment"><img class="ytm15-icon dislike-icon comment-action-icon" src="ic_comment_dislike_outline.png" width="24" height="24"></button>
 <span class="comment-count"></span>
 </div>
 <div class="comment-icons" id="cm-icon-reply">
-<button class="icon-button comment-icon-button" aria-label="Reply to this comment"><img class="ytm15-icon reply-icon comment-action-icon" src="ic_comment_reply_outline.png">
+<button class="icon-button comment-icon-button" aria-label="Reply to this comment"><img class="ytm15-icon reply-icon comment-action-icon" src="ic_comment_reply_outline.png" width="24" height="24">
 </button>
 <span class="comment-count">${cmReplyCount}</span>
 </div>
@@ -1078,7 +1078,7 @@ function renderPosts(parent, postId, postSource){
     postAttachment = "";
     if (item.attachment){
     if (item.attachment.type == "image") {
-    postAttachment = `<div class="post-image-container single-image"><img class="post-img ytm15-img lazy" loading="lazy" src="${item.attachment.image.pop().url}"></img><img class="ytm15-icon image-icon post-image-icon" src="ic_post_image_outline.png"></div>`;
+    postAttachment = `<div class="post-image-container single-image"><img class="post-img ytm15-img lazy" loading="lazy" src="${item.attachment.image.pop().url}"></img><img class="ytm15-icon image-icon post-image-icon" src="ic_post_image_outline.png" width="24" height="24"></div>`;
     } else if (item.attachment.type == "multi_image") {
     postAttachment = `<div class="post-multi-image-container">`;
     
@@ -1086,7 +1086,7 @@ function renderPosts(parent, postId, postSource){
     postNumber = 0;
     item.attachment.image.forEach(function(item1){
     postNumber += 1;
-    postAttachment += `<div class="post-img-container-multi"><div class="post-image-container"><img class="post-img ytm15-img lazy" loading="lazy" src="${item1.pop().url}"></img><img class="ytm15-icon image-multi-icon post-image-icon" src="ic_post_image_outline.png"><div class="post-image-page-number-indicator">${postNumber}/${multiImageLength}</div></div></div>`
+    postAttachment += `<div class="post-img-container-multi"><div class="post-image-container"><img class="post-img ytm15-img lazy" loading="lazy" src="${item1.pop().url}"></img><img class="ytm15-icon image-multi-icon post-image-icon" src="ic_post_image_outline.png" wdith="24" height="24"><div class="post-image-page-number-indicator">${postNumber}/${multiImageLength}</div></div></div>`
     });
     
     postAttachment += `</div>`
@@ -1102,15 +1102,15 @@ function renderPosts(parent, postId, postSource){
 <div class="post-attachment">${postAttachment}</div>
 <div class="post-details">
 <div class="post-icons" id="post-icon-like">
-<button class="icon-button post-icon-button" aria-label="Like this post"><img class="ytm15-icon like-icon post-action-icon" src="ic_like_outline.png"></button>
+<button class="icon-button post-icon-button" aria-label="Like this post"><img class="ytm15-icon like-icon post-action-icon" src="ic_like_outline.png" width="24" height="24"></button>
 <span class="post-count">${postLikeCount}</span>
 </div>
 <div class="post-icons" id="post-icon-dislike">
-<button class="icon-button post-icon-button" aria-label="Dislike this post"><img class="ytm15-icon dislike-icon post-action-icon" src="ic_dislike_outline.png"></button>
+<button class="icon-button post-icon-button" aria-label="Dislike this post"><img class="ytm15-icon dislike-icon post-action-icon" src="ic_dislike_outline.png" width="24" height="24"></button>
 <span class="post-count"></span>
 </div>
 <div class="post-icons" id="post-icon-reply">
-<button class="icon-button post-icon-button" aria-label="Reply to this post"><img class="ytm15-icon reply-icon post-action-icon" src="ic_reply_outline.png">
+<button class="icon-button post-icon-button" aria-label="Reply to this post"><img class="ytm15-icon reply-icon post-action-icon" src="ic_reply_outline.png" width="24" height="24">
 </button>
 <span class="post-count">${postReplyCount}</span>
 </div>
@@ -1560,7 +1560,7 @@ function renderCompactMediaItem(parent, parentName, itemVideoId, itemThumbnail, 
         };
         menuBtn.setAttribute("aria-label", "Action menu");
         menuBtn.setAttribute("aria-haspopup", "true");
-        menuBtn.innerHTML = `<ytm15-icon class="menu-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z"></path></svg></ytm15-icon>`;
+        menuBtn.innerHTML = `<ytm15-icon class="menu-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></ytm15-icon>`;
         if (APP_DEMATERIALIZE_UI_expflag == "true") {
         menuBtn.innerHTML = `<img class="ytm15-img-icon ytm15-img menu-icon inactive" src="contextual_menu_anchor_normal.png"><img class="ytm15-img-icon ytm15-img menu-icon active" src="contextual_menu_anchor_pressed.png">`;
         };
@@ -1903,7 +1903,7 @@ function renderMediaItem(parent, parentName, itemVideoId, itemThumbnail, itemLen
         };
         menuBtn.setAttribute("aria-label", "Action menu");
         menuBtn.setAttribute("aria-haspopup", "true");
-        menuBtn.innerHTML = `<ytm15-icon class="menu-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z"></path></svg></ytm15-icon>`;
+        menuBtn.innerHTML = `<ytm15-icon class="menu-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></ytm15-icon>`;
         if (APP_DEMATERIALIZE_UI_expflag == "true") {
         menuBtn.innerHTML = `<img class="ytm15-img-icon ytm15-img menu-icon inactive" src="contextual_menu_anchor_normal.png"><img class="ytm15-img-icon ytm15-img menu-icon active" src="contextual_menu_anchor_pressed.png">`;
         };
@@ -2081,7 +2081,7 @@ document.body.classList.remove("has-watchpage");
 };
 exitWatch.setAttribute("aria-label", "Exit watchpage");
 exitWatch.setAttribute("aria-haspopup", "false");
-exitWatch.innerHTML = `<img class="ytm15-icon exit-watch-icon" src="ic_expand_outline">`;
+exitWatch.innerHTML = `<img class="ytm15-icon exit-watch-icon" src="ic_expand_outline.png">`;
 
 const exitIFramePlayer = document.createElement("button");
 exitIFramePlayer.classList.add("icon-button", "watch-action-button", "exit-iframe-button");
@@ -2090,7 +2090,7 @@ exitIFramePlayer.onclick = function(){
 };
 exitIFramePlayer.setAttribute("aria-label", "Exit iFrame Player");
 exitIFramePlayer.setAttribute("aria-haspopup", "false");
-exitIFramePlayer.innerHTML = `<img class="ytm15-icon exit-iframe-icon" src="ic_exit_outline">`;
+exitIFramePlayer.innerHTML = `<img class="ytm15-icon exit-iframe-icon" src="ic_exit_outline.png">`;
 
 const exitWatch2 = exitWatch.cloneNode(true);
 exitWatch2.onclick = function(){

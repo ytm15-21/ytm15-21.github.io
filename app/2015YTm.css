@@ -896,7 +896,7 @@ button {
     border-radius: 50%;
 }
 
-ytm15-icon img {
+ytm15-icon {
     display: inline-block;
     flex-shrink: 0;
     width: 24px;
@@ -1779,12 +1779,12 @@ ytm15app.has-miniplayer {
 .player-controls-overlay .watch-action-button {
     color: rgba(255, 255, 255, 0.9);
 }
-.watch-action-button ytm15-icon img {
+.watch-action-button ytm15-icon {
     width: 28px;
     height: 28px;
 }
 .watch-action-button ytm15-icon img {
-    filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.5));
+     filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.5));
     -webkit-filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.5));
 }
 .miniplayer-content {
@@ -2576,7 +2576,7 @@ ytm15-menu-button {
     margin: 0 -7px;
     flex-shrink: 0;
 }
-.media-item-menu .icon-button img {
+.media-item-menu .icon-button {
     padding: 1px;
     width: 22px;
     height: 22px;
@@ -3002,7 +3002,7 @@ ytm15-channels-header {
     flex-direction: column;
     justify-content: center;
 }
-.channels-header-icon img {
+.channels-header-icon {
     width: 60px;
     height: 60px;
     margin-top: -40px;
@@ -3035,7 +3035,7 @@ ytm15-channels-header {
     justify-content: flex-start;
     align-items: flex-end;
 }
-.channels-header-icon img {
+.channels-header-icon {
     width: 125px;
     height: 125px;
     margin-top: -90px;
@@ -3537,7 +3537,7 @@ ytm15-playlist-header[data-is-beta="true"]::before {
     display: flex;
     padding: 7px 16px;
 }
-.comment-simplebox-icon img {
+.comment-simplebox-icon {
     width: 45px;
     height: 45px;
     margin-right: 16px;
@@ -3565,7 +3565,7 @@ ytm15-playlist-header[data-is-beta="true"]::before {
     padding-top: 15px;
     padding-bottom: 13px;
 }
-[data-viewing-replies="true"] .comment-simplebox-icon img {
+[data-viewing-replies="true"] .comment-simplebox-icon {
     width: 26px;
     height: 26px;
     margin-left: 19px;

@@ -516,11 +516,11 @@ function channelPage() {
 
     const moreIcon = document.createElement("ytm15-icon");
     moreIcon.classList.add('show-more-icon');
-    moreIcon.innerHTML = `<img src="ic_expand_outline.png">`;
+    moreIcon.innerHTML = `<img src="ic_expand_outline.png" width="24" height="24">`;
 
     const lessIcon = document.createElement("ytm15-icon");
     lessIcon.classList.add('show-less-icon');
-    lessIcon.innerHTML = `<img src="ic_compress_outline.png">`;
+    lessIcon.innerHTML = `<img src="ic_compress_outline.png" width="24" height="24">`;
 
     const ISButton = document.createElement("button");
     ISButton.classList.add('collapse-shelf-button', 'icon-button');
@@ -751,11 +751,11 @@ function channelPage() {
 
     const moreIcon = document.createElement("ytm15-icon");
     moreIcon.classList.add('show-more-icon');
-    moreIcon.innerHTML = `<img src="ic_expand_outline.png">`;
+    moreIcon.innerHTML = `<img src="ic_expand_outline.png" width="24" height="24">`;
 
     const lessIcon = document.createElement("ytm15-icon");
     lessIcon.classList.add('show-less-icon');
-    lessIcon.innerHTML = `<img src="ic_compress_outline.png">`;
+    lessIcon.innerHTML = `<img src="ic_compress_outline.png" width="24" height="24">`;
 
     const ISButton = document.createElement("button");
     ISButton.classList.add('collapse-shelf-button', 'icon-button');
@@ -1752,11 +1752,11 @@ function channelVideosContin(continuation, contItemParent) {
 
     const moreIcon = document.createElement("ytm15-icon");
     moreIcon.classList.add('show-more-icon');
-    moreIcon.innerHTML = `<img src="ic_expand_outline.png">`;
+    moreIcon.innerHTML = `<img src="ic_expand_outline.png" width="24" height="24">`;
 
     const lessIcon = document.createElement("ytm15-icon");
     lessIcon.classList.add('show-less-icon');
-    lessIcon.innerHTML = `<img src="ic_compress_outline.png">`;
+    lessIcon.innerHTML = `<img src="ic_compress_outline.png" width="24" height="24">`;
 
     const ISButton = document.createElement("button");
     ISButton.classList.add('collapse-shelf-button', 'icon-button');

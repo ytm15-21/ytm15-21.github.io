@@ -12,7 +12,7 @@ xhttpr.onload = function() {
 data.forEach(function(item) {
 const li = document.createElement("li");
 li.classList.add("sbdd-siggestion-item")
-li.innerHTML = `<a href="#/results?query=${encodeURIComponent(item)}" class="sbdd-suggestion-link has-ripple"><div class="sbdd-item-text-cont"><div>${item}</div></div><div class="sbdd-item-icon has-ripple"><img class="ytm15-icon arrow-top-left-icon" src="ic_search_suggestions_outline.png" style="transform: translate(5px, -12px);"></div></a>`;
+li.innerHTML = `<a href="#/results?query=${encodeURIComponent(item)}" class="sbdd-suggestion-link has-ripple"><div class="sbdd-item-text-cont"><div>${item}</div></div><div class="sbdd-item-icon has-ripple"><img class="ytm15-icon arrow-top-left-icon" src="ic_search_suggestions_outline.png" width="24" height="24" style="transform: translate(5px, -12px);"></div></a>`;
 li.role = "presentation";
 li.querySelector(".sbdd-item-icon").onclick = function(){
   sbInput.click();
