@@ -821,6 +821,7 @@ animation-duration: .28s;
     padding: 0;
     width: 100%;
     height: 45px;
+    color: #808080;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1784,7 +1785,7 @@ ytm15app.has-miniplayer {
     height: 28px;
 }
 .watch-action-button ytm15-icon img {
-     filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.5));
+    filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.5));
     -webkit-filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.5));
 }
 .miniplayer-content {
@@ -2286,11 +2287,12 @@ ytm15-badge:empty, .standalone-badge-supported ytm15-badge:empty {
 .top-standalone-badge ytm15-badge:last-child a:last-child {
     padding-right: 12px;
 }
-.video-metadata-header-content ytm15-icon img {
+.video-metadata-header-content ytm15-icon {
+    color: rgba(0, 0, 0, 0.25);
     margin-right: 3px;
     transition: transform .3s ease-out;
 }
-.video-metadata-header-content ytm15-icon.collapse-icon img {
+.video-metadata-header-content ytm15-icon.collapse-icon {
     transform: rotate(180deg);
 }
 .video-metadata-header-content ytm15-icon path {
@@ -2582,7 +2584,7 @@ ytm15-menu-button {
     height: 22px;
     border-radius: 50px;
 }
-.media-item-menu ytm15-icon img {
+.media-item-menu ytm15-icon {
     width: 20px;
     height: 20px;
 }
@@ -3797,7 +3799,7 @@ ytm15-backstage-post {
     padding: 2px 0;
     margin-right: -16px;
 }
-.post-icons img {
+.post-icons {
     display: flex;
     justify-content: center;
     height: 36px;
@@ -3844,7 +3846,7 @@ button.post-icon-button {
     background-color: rgba(0,0,0,0.1);
     border-radius: 4px;
 }
-ytm15-icon.post-image-icon img {
+ytm15-icon.post-image-icon {
     position: absolute;
     bottom: 0;
     right: 0;

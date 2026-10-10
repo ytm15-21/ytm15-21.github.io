@@ -244,7 +244,7 @@ function renderHeader() {
     if (HEADER_CAST_ALTERNATE_ICON_expflag == "true") {
 	castBtn.innerHTML = `<img class="ytm15-icon search-icon" src="ic_cast_outline.png" width="24" height="24">`
     } else {
-	castBtn.innerHTML = `<img class="ytm15-icon search-icon" src="ic_outline_outline.png" width="24" height="24">`
+	castBtn.innerHTML = `<img class="ytm15-icon search-icon" src="ic_notifications_outline.png" width="24" height="24">`
     }
     if (window.location.pathname.split("/").slice(3, 4) == "results.html") {
         castBtn.setAttribute("hidden", "");

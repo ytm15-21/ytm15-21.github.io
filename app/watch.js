@@ -201,7 +201,7 @@ function renderWatchPage(parent) {
       const metaBadge = document.createElement("div");
       metaBadge.classList.add("metadata-badge-container");
       metaBadge.innerHTML = `<ytm15-badge class="metadata-badge soft-background typography-body-1b" data-type="BADGE_STYLE_TYPE_SIMPLE">
-<ytm15-icon class="pivot-bar-tab-icon ${item.pivotName}-icon"><img src="${item.iconPath}"></ytm15-icon>
+<ytm15-icon class="${item.iconName}"><img src="${item.iconPath}"></ytm15-icon> ${item.title}
 </ytm15-badge>`;
       badgeCont.appendChild(metaBadge);
     });

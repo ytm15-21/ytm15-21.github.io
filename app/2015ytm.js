@@ -877,8 +877,7 @@ ${pinnedCMBadge}
       commentFooter.classList.add("comment-footer");
       commentFooter.appendChild(commentCont.querySelector(".comment-published-time"));
       commentCont.querySelector(".comment-text").insertAdjacentElement("afterend", commentFooter);
-      commentCont.querySelector(".comment-details").innerHTML = `<div class="comment-
-s" id="cm-icon-like">
+      commentCont.querySelector(".comment-details").innerHTML = `<div class="comment-icons" id="cm-icon-like">
 <button class="icon-button comment-icon-button" aria-label="Like this comment"><img class="ytm15-img-icon ytm15-img like-icon comment-action-icon" src="ic_comment_like.png"></button>
 <span class="comment-count">${item.likeCount.toLocaleString()}</span>
 </div>
@@ -1102,15 +1101,15 @@ function renderPosts(parent, postId, postSource){
 <div class="post-attachment">${postAttachment}</div>
 <div class="post-details">
 <div class="post-icons" id="post-icon-like">
-<button class="icon-button post-icon-button" aria-label="Like this post"><img class="ytm15-icon like-icon post-action-icon" src="ic_like_outline.png" width="24" height="24"></button>
+<button class="icon-button post-icon-button" aria-label="Like this post"><img class="ytm15-icon like-icon post-action-icon" src="ic_like_outline.png" width="16" height="16"></button>
 <span class="post-count">${postLikeCount}</span>
 </div>
 <div class="post-icons" id="post-icon-dislike">
-<button class="icon-button post-icon-button" aria-label="Dislike this post"><img class="ytm15-icon dislike-icon post-action-icon" src="ic_dislike_outline.png" width="24" height="24"></button>
+<button class="icon-button post-icon-button" aria-label="Dislike this post"><img class="ytm15-icon dislike-icon post-action-icon" src="ic_dislike_outline.png" width="16" height="16"></button>
 <span class="post-count"></span>
 </div>
 <div class="post-icons" id="post-icon-reply">
-<button class="icon-button post-icon-button" aria-label="Reply to this post"><img class="ytm15-icon reply-icon post-action-icon" src="ic_reply_outline.png" width="24" height="24">
+<button class="icon-button post-icon-button" aria-label="Reply to this post"><img class="ytm15-icon reply-icon post-action-icon" src="ic_reply_outline.png" width="16" height="16">
 </button>
 <span class="post-count">${postReplyCount}</span>
 </div>
@@ -1560,7 +1559,7 @@ function renderCompactMediaItem(parent, parentName, itemVideoId, itemThumbnail, 
         };
         menuBtn.setAttribute("aria-label", "Action menu");
         menuBtn.setAttribute("aria-haspopup", "true");
-        menuBtn.innerHTML = `<ytm15-icon class="menu-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></ytm15-icon>`;
+        menuBtn.innerHTML = `<img class="ytm15-icon menu-icon" src="ic_overflow_outline.png">`;
         if (APP_DEMATERIALIZE_UI_expflag == "true") {
         menuBtn.innerHTML = `<img class="ytm15-img-icon ytm15-img menu-icon inactive" src="contextual_menu_anchor_normal.png"><img class="ytm15-img-icon ytm15-img menu-icon active" src="contextual_menu_anchor_pressed.png">`;
         };
@@ -1903,7 +1902,7 @@ function renderMediaItem(parent, parentName, itemVideoId, itemThumbnail, itemLen
         };
         menuBtn.setAttribute("aria-label", "Action menu");
         menuBtn.setAttribute("aria-haspopup", "true");
-        menuBtn.innerHTML = `<ytm15-icon class="menu-icon"><svg viewBox="0 0 24 24" fill=""><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></ytm15-icon>`;
+        menuBtn.innerHTML = `<img class="ytm15-icon menu-icon" src="ic_overflow_outline.png">`;
         if (APP_DEMATERIALIZE_UI_expflag == "true") {
         menuBtn.innerHTML = `<img class="ytm15-img-icon ytm15-img menu-icon inactive" src="contextual_menu_anchor_normal.png"><img class="ytm15-img-icon ytm15-img menu-icon active" src="contextual_menu_anchor_pressed.png">`;
         };
@@ -2081,7 +2080,7 @@ document.body.classList.remove("has-watchpage");
 };
 exitWatch.setAttribute("aria-label", "Exit watchpage");
 exitWatch.setAttribute("aria-haspopup", "false");
-exitWatch.innerHTML = `<img class="ytm15-icon exit-watch-icon" src="ic_expand_outline.png">`;
+exitWatch.innerHTML = `<img class="ytm15-icon exit-watch-icon" src="ic_vidcontrol_collapse.png" width="28" height="28">`;
 
 const exitIFramePlayer = document.createElement("button");
 exitIFramePlayer.classList.add("icon-button", "watch-action-button", "exit-iframe-button");
@@ -2090,7 +2089,7 @@ exitIFramePlayer.onclick = function(){
 };
 exitIFramePlayer.setAttribute("aria-label", "Exit iFrame Player");
 exitIFramePlayer.setAttribute("aria-haspopup", "false");
-exitIFramePlayer.innerHTML = `<img class="ytm15-icon exit-iframe-icon" src="ic_exit_outline.png">`;
+exitIFramePlayer.innerHTML = `<img class="ytm15-icon exit-iframe-icon" src="ic_vidcontrol_hide_controls.png" width="28" height="28">`;
 
 const exitWatch2 = exitWatch.cloneNode(true);
 exitWatch2.onclick = function(){
@@ -2154,7 +2153,7 @@ document.body.classList.add("has-watchpage");
 };
 openWatch.setAttribute("aria-label", "Open watchpage");
 openWatch.setAttribute("aria-haspopup", "false");
-openWatch.innerHTML = `<img class="ytm15-icon open-watch-icon" src="ic_compress_outline.png">`;
+openWatch.innerHTML = `<img class="ytm15-icon open-watch-icon" src="ic_vidcontrol_compress.png" width="28" height="28">`;
 
 mpContent.onclick = function(e){
 if (e.target == mpContent) {
@@ -2189,7 +2188,7 @@ setTimeout(function() {
 };
 closeVideo.setAttribute("aria-label", "Close video");
 closeVideo.setAttribute("aria-haspopup", "false");
-closeVideo.innerHTML = `<img class="ytm15-icon x-icon" src="ic_exit_outline.png">`;
+closeVideo.innerHTML = `<img class="ytm15-icon x-icon" src="ic_vidcontrol_hide_controls.png" width="28" height="28">`;
 
 var playerContListener = SwipeListener(playerCont);
 playerCont.addEventListener('swipe', function (e) {
