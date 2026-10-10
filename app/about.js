@@ -575,6 +575,10 @@ a few hours later:
 -Changed about page's text
 -Updated an expflag to remove the YouTube icon from the Subscribe button
 -Updated video player
+
+09 - 10 Oct 2026:
+-Fixed video description
+-Fixed all icons sizing, positioning and color
     </div>
     </div>
     </div>
