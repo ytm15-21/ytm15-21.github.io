@@ -2292,7 +2292,7 @@ ytm15-badge:empty, .standalone-badge-supported ytm15-badge:empty {
     margin-right: 3px;
     transition: transform .3s ease-out;
 }
-.video-metadata-header-content ytm15-icon.collapse-icon {
+.video-metadata-header-content ytm15-icon.collapse-icon img {
     transform: rotate(180deg);
 }
 .video-metadata-header-content ytm15-icon path {
