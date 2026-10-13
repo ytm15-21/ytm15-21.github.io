@@ -579,6 +579,9 @@ a few hours later:
 09 - 10 Oct 2026:
 -Fixed video description
 -Fixed all icons sizing, positioning and color
+
+13 Oct 2026:
+-Fixed cancel and overflow icons
     </div>
     </div>
     </div>
