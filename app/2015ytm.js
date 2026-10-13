@@ -1090,7 +1090,7 @@ function renderPosts(parent, postId, postSource){
     
     postAttachment += `</div>`
     } else {
-    postAttachment = `<div class="post-unsupported-attachment-msg"><span class="subhead">${item.attachment.type} attachments are not supported on ytm15 posts yet.</span></div>`;
+    postAttachment = `<div class="post-unsupported-attachment-msg"><span class="subhead">${item.attachment.type} attachments are not supported on ytm21 posts yet.</span></div>`;
     };
     };
     postCont.innerHTML = `<p class="post-text user-text">${item.contentText}</p>
