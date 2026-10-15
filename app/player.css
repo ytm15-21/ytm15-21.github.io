@@ -172,7 +172,7 @@
     background: #4f4f4f;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
-    height: 4px;
+    height: 2px;
     margin: 0 12px;
 }
 .progress-filled {
@@ -184,10 +184,10 @@
 }
 .progress-track {
     position: absolute;
-    height: 30px;
-    width: 30px;
-    right: -14px;
-    top: -13px;
+    height: 18px;
+    width: 18px;
+    right: -9px;
+    top: -8px;
     border-radius: 50%;
     pointer-events: none;
 }
@@ -195,7 +195,7 @@
     content: "";
     background-color: #ff0000;
     padding: 5px;
-    margin: 10px;
+    margin: 4px;
     display: block;
     border-radius: 50%;
 }

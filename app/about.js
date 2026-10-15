@@ -583,6 +583,9 @@ a few hours later:
 13 Oct 2026:
 -Fixed cancel and overflow icons
 -Changed ytm15 names to ytm21 ones in community posts
+
+14 Oct 2026:
+-Fixed player icons and seekbar
     </div>
     </div>
     </div>
