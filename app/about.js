@@ -586,6 +586,7 @@ a few hours later:
 
 14 Oct 2026:
 -Fixed player icons and seekbar
+-Changed playlists' icon to the 2021 (Outline) one
     </div>
     </div>
     </div>
